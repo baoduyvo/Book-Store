@@ -1,9 +1,11 @@
-package org.voduybao.bookstorebackend.dao.entities;
+package org.voduybao.bookstorebackend.dao.entities.user;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.voduybao.bookstorebackend.tools.contants.AuthProviderEnum;
+import org.voduybao.bookstorebackend.dao.entities.auth.Role;
+import org.voduybao.bookstorebackend.dao.entities.auth.Token;
+import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
 
 import java.time.Instant;
 import java.util.HashSet;
@@ -43,19 +45,22 @@ public class User {
     @Column(name = "provider_id")
     private String providerId;
 
-    @Column(name = "is_status")
-    private Boolean isStatus;
+    @Column(name = "is_active")
+    private Boolean isActive;
 
     @Column(name = "is_verified")
     private Boolean isVerified;
 
+    @Column(name = "created_at", updatable = false)
     private Instant createdAt;
+
+    @Column(name = "updated_at")
     private Instant updatedAt;
 
     @PrePersist
     public void handleBeforeCreate() {
-        if (this.isStatus == null) {
-            this.isStatus = false;
+        if (this.isActive == null) {
+            this.isActive = false;
         }
         if (this.isVerified == null) {
             this.isVerified = false;

@@ -11,6 +11,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.voduybao.bookstorebackend.dtos.UserDto;
 import org.voduybao.bookstorebackend.services.user.UserService;
+import org.voduybao.bookstorebackend.tools.contants.a.AdminRequired;
 import org.voduybao.bookstorebackend.tools.http.Headers;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
@@ -25,6 +26,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("")
+    @AdminRequired
     public Result getUsers(
             @RequestParam(value = "page") @Min(0) int page,
             @RequestParam(value = "size") @Min(0) @Max(50) int size
@@ -58,11 +60,6 @@ public class UserController {
             @RequestHeader(value = Headers.X_USER_ID) int userID,
             @Validated @RequestBody UserDto.ConfirmForgotPasswordRequest request) {
         userService.confirmPassword(userID, request);
-        return Result.success();
-    }
-
-    @PutMapping("/reset-password/{user_id}")
-    public Result resetPassword(@PathVariable("user_id") @NotNull Integer userId){
         return Result.success();
     }
 

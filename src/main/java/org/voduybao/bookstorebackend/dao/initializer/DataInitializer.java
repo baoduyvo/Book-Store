@@ -2,10 +2,10 @@ package org.voduybao.bookstorebackend.dao.initializer;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.User;
-import org.voduybao.bookstorebackend.dao.repositories.RoleRepository;
-import org.voduybao.bookstorebackend.dao.repositories.UserRepository;
-import org.voduybao.bookstorebackend.tools.contants.AuthProviderEnum;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.repositories.auth.RoleRepository;
+import org.voduybao.bookstorebackend.dao.repositories.user.UserRepository;
+import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
 
 import java.util.Set;
 
@@ -32,7 +32,7 @@ public class DataInitializer implements CommandLineRunner {
             user.setPhoneNumber("84123456789");
             user.setPassword("$2a$10$I37G59I.XTdzJkcdTzfdv.an1PySI3dyL8k9g40kf5n.gyEy/9hcO");
             user.setAuthProvider(AuthProviderEnum.LOCAL);
-            user.setIsStatus(true);
+            user.setIsActive(true);
             user.setIsVerified(true);
             user.setRoles(Set.of(
                     roleRepository.getAdminRole(),

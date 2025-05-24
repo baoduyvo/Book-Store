@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-@Slf4j(topic = "SMS-SERVICE")
+@Slf4j(topic = "SMS")
 public class SMSServiceImpl implements SMSService {
 
     @Setter(onMethod_ = @Autowired)

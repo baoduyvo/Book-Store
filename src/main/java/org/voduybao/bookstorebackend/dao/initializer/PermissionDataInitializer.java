@@ -2,8 +2,8 @@ package org.voduybao.bookstorebackend.dao.initializer;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.Permission;
-import org.voduybao.bookstorebackend.dao.repositories.PermissionRepository;
+import org.voduybao.bookstorebackend.dao.entities.auth.Permission;
+import org.voduybao.bookstorebackend.dao.repositories.auth.PermissionRepository;
 
 @Component
 public class PermissionDataInitializer {

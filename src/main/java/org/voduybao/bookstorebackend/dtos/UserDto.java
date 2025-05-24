@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.repositories.join.UserUserProfileJoin;
+import org.voduybao.bookstorebackend.dao.repositories.user.join.UserUserProfileJoin;
 
 public class UserDto {
 
@@ -51,13 +51,12 @@ public class UserDto {
         private String phoneNumber;
         private String authProvider;
         private String providerId;
-        private Boolean isStatus;
+        private Boolean isActive;
         private String nickname;
         private String intro;
         private String gender;
         private String firstName;
         private String lastName;
-        private String image;
         private String hobbyTitle;
         private String jobTitle;
         private String eduTitle;
@@ -71,13 +70,12 @@ public class UserDto {
                     entity.getPhoneNumber(),
                     entity.getAuthProvider(),
                     entity.getProviderId(),
-                    entity.getIsStatus(),
+                    entity.getIsActive(),
                     entity.getNickname(),
                     entity.getIntro(),
                     entity.getGender(),
                     entity.getFirstName(),
                     entity.getLastName(),
-                    entity.getImage(),
                     entity.getJobId(),
                     entity.getHobbyId(),
                     entity.getEduId(),

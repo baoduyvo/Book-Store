@@ -1,11 +1,11 @@
-package org.voduybao.bookstorebackend.dao.repositories;
+package org.voduybao.bookstorebackend.dao.repositories.user;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
-import org.voduybao.bookstorebackend.dao.entities.User;
-import org.voduybao.bookstorebackend.dao.repositories.join.UserUserProfileJoin;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.repositories.user.join.UserUserProfileJoin;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,7 +19,7 @@ public interface UserRepository extends CrudRepository<User, Integer>,
     @Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END FROM User u WHERE u.phoneNumber = :phoneNumber")
     boolean existsUserByPhoneNumber(@Param("phoneNumber") String phoneNumber);
 
-    @Query("SELECT u FROM User u WHERE u.email = :email")
+    @Query("SELECT u FROM User u JOIN FETCH u.roles WHERE u.email = :email")
     Optional<User> findUserByEmail(@Param("email") String email);
 
     @Query("SELECT u FROM User u WHERE u.phoneNumber = :phone")
@@ -32,14 +32,13 @@ public interface UserRepository extends CrudRepository<User, Integer>,
             u.phone_number    AS phoneNumber,
             u.auth_provider   AS authProvider,
             u.provider_id     AS providerId,
-            u.is_status       AS status,
+            u.is_active       AS active,
             
             p.nickname        AS nickname,
             p.intro           AS intro,
             p.gender          AS gender,
             p.first_name      AS firstName,
             p.last_name       AS lastName,
-            p.profile_image   AS image,
             
             p.job_id          AS jobId,
             p.edu_id          AS eduId,

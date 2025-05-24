@@ -1,9 +1,9 @@
-package org.voduybao.bookstorebackend.dao.repositories;
+package org.voduybao.bookstorebackend.dao.repositories.auth;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
-import org.voduybao.bookstorebackend.dao.entities.Token;
+import org.voduybao.bookstorebackend.dao.entities.auth.Token;
 
 import java.util.Optional;
 

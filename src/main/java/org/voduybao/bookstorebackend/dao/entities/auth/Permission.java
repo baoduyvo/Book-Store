@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.dao.entities;
+package org.voduybao.bookstorebackend.dao.entities.auth;
 
 import jakarta.persistence.*;
 import lombok.*;

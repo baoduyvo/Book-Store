@@ -2,7 +2,7 @@ package org.voduybao.bookstorebackend.dao.entities.media;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
 
 import java.time.Instant;
 
@@ -21,13 +21,13 @@ public class UserMedia {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private UserProfile user;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "media_id", nullable = false)
     private MediaGallery media;
 
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column(name = "created_at", updatable = false)
     private Instant createdAt;
 
     @Column(name = "updated_at")

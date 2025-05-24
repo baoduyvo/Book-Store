@@ -22,7 +22,7 @@ public class Hobby {
     @Column(name = "title", length = 255)
     private String title;
 
-    @Column(name = "created_at")
+    @Column(name = "created_at", updatable = false)
     private Instant createdAt;
 
     @Column(name = "updated_at")

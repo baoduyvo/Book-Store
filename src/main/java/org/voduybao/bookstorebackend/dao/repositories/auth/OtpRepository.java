@@ -17,8 +17,6 @@ public interface OtpRepository extends CrudRepository<Otp, String> {
     @Query("DELETE FROM Otp o WHERE o.expiration < :time")
     int deleteByExpirationBefore(Instant time);
 
-    @Modifying
-    @Transactional
     @Query("SELECT o FROM Otp o WHERE o.otp = :otp")
-    Optional<Otp> findByIdOtp(@Param("otp") String otp);
+    Optional<Otp> findOtp(@Param("otp") String otp);
 }

@@ -3,11 +3,9 @@ package org.voduybao.bookstorebackend.dao.entities.media;
 import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.embedded.FileEntry;
-import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
 import org.voduybao.bookstorebackend.tools.contants.e.FileTypeEnum;
 
 import java.time.Instant;
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -55,19 +53,24 @@ public class MediaGallery {
     @Column(name = "is_deleted")
     private Boolean isDeleted;
 
+    @OneToMany(mappedBy = "media")
+    private Set<UserMedia> usedByUsers;
+
     private Instant createdAt;
     private Instant updatedAt;
 
     @PrePersist
     public void handleBeforeCreate() {
-        this.createdAt = Instant.now();
+        if(this.isActive == null || this.createdAt == null || this.isDeleted == null) {
+            this.isActive = true;
+            this.isDeleted = false;
+            this.createdAt = Instant.now();
+
+        }
     }
 
     @PreUpdate
     public void handleBeforeUpdate() {
         this.updatedAt = Instant.now();
     }
-
-    @OneToMany(mappedBy = "profileImage")
-    private Set<UserProfile> profileImage = new HashSet<>();
 }

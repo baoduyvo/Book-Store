@@ -9,6 +9,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.voduybao.bookstorebackend.dtos.AuthenDto;
 import org.voduybao.bookstorebackend.services.auth.AuthenService;
+import org.voduybao.bookstorebackend.tools.contants.a.AdminRequired;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
 @Slf4j
@@ -41,10 +42,16 @@ public class AuthController {
     }
 
     @PostMapping("/sign-out")
-    public Result signOut(@RequestBody @Validated AuthenDto.LogoutRequest request,
+    public Result signOut(@RequestBody @Validated AuthenDto.TokenRequest request,
                           HttpServletResponse response) {
         authenService.logout(request, response);
         return Result.success();
+    }
+
+    @PostMapping("/introspect")
+    public Result introspect(@RequestBody @Validated AuthenDto.TokenRequest request) {
+        var reponse = authenService.introspect(request);
+        return Result.content(reponse);
     }
 
     @GetMapping("/socail-login")

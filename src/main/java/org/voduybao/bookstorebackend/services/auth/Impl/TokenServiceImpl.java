@@ -7,13 +7,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.Token;
-import org.voduybao.bookstorebackend.dao.entities.User;
-import org.voduybao.bookstorebackend.dao.repositories.TokenRepository;
+import org.voduybao.bookstorebackend.dao.entities.auth.Token;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.repositories.auth.TokenRepository;
 import org.voduybao.bookstorebackend.services.auth.JwtService;
 import org.voduybao.bookstorebackend.services.auth.TokenService;
-import org.voduybao.bookstorebackend.tools.utils.RandomNumberGenerator;
 import org.voduybao.bookstorebackend.tools.utils.StrUtil;
+import org.voduybao.bookstorebackend.tools.utils.Utils;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -37,7 +37,7 @@ public class TokenServiceImpl implements TokenService {
     @Override
     public Token createAndSaveToken(User user, HttpServletResponse response) {
         log.info("Save Token And Set Cookie ...!");
-        String jti = RandomNumberGenerator.generateRandomNumber();
+        String jti = Utils.generateRandomNumber();
         Instant now = Instant.now();
         Instant expiry1Hour = now.plus(accessTokenMINUTES, ChronoUnit.MINUTES);
         Instant expiry7Day = now.plus(refreshTokenDAY, ChronoUnit.DAYS);

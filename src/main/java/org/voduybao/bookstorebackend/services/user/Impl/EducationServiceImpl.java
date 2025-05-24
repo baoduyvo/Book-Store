@@ -23,6 +23,7 @@ public class EducationServiceImpl implements EducationService {
 
     @Override
     public void create(EducationDto.Request request) {
+        log.info("Education create ...!");
         Education education = Education.builder()
                 .title(request.getTitle())
                 .build();
@@ -31,6 +32,7 @@ public class EducationServiceImpl implements EducationService {
 
     @Override
     public void update(Integer id, EducationDto.Request request) {
+        log.info("Education update ...!");
         Education education = educationRepository.findById(id)
                 .orElseThrow(() -> new ResponseException(ResponseErrors.EDUCATION_NOT_FOUND));
         education.setTitle(request.getTitle());
@@ -39,6 +41,7 @@ public class EducationServiceImpl implements EducationService {
 
     @Override
     public List<Education> list() {
+        log.info("Education get lists ...!");
         List<Education> result = new ArrayList<>();
         for (Education education : educationRepository.findAll()) {
             result.add(education);
@@ -48,11 +51,15 @@ public class EducationServiceImpl implements EducationService {
 
     @Override
     public void delete(Integer id) {
-        educationRepository.deleteById(id);
+        log.info("Education delete ...!");
+        Education education = educationRepository.findById(id)
+                .orElseThrow(() -> new ResponseException(ResponseErrors.EDUCATION_NOT_FOUND));
+        educationRepository.delete(education);
     }
 
     @Override
     public Education getById(Integer id) {
+        log.info("Education get by id ...!");
         Education education = educationRepository.findById(id)
                 .orElseThrow(() -> new ResponseException(ResponseErrors.EDUCATION_NOT_FOUND));
         return education;

@@ -1,8 +1,9 @@
-package org.voduybao.bookstorebackend.dao.entities;
+package org.voduybao.bookstorebackend.dao.entities.auth;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.tools.contants.RoleEnum;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.tools.contants.e.RoleEnum;
 
 import java.util.HashSet;
 import java.util.Set;

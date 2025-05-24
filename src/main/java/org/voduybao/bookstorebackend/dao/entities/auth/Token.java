@@ -1,8 +1,9 @@
-package org.voduybao.bookstorebackend.dao.entities;
+package org.voduybao.bookstorebackend.dao.entities.auth;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

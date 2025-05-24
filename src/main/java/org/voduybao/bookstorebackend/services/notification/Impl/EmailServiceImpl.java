@@ -11,7 +11,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.voduybao.bookstorebackend.services.notification.EmailService;
 
 @Component
-@Slf4j(topic = "EMAIL-SERVICE")
+@Slf4j(topic = "EMAIL")
 public class EmailServiceImpl implements EmailService {
 
     @Setter(onMethod_ = @Autowired)

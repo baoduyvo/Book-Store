@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.dao.repositories.join;
+package org.voduybao.bookstorebackend.dao.repositories.user.join;
 
 public interface UserUserProfileJoin {
     Integer getUserId();
@@ -11,7 +11,7 @@ public interface UserUserProfileJoin {
 
     String getProviderId();
 
-    Boolean getIsStatus();
+    Boolean getIsActive();
 
     String getNickname();
 
@@ -22,8 +22,6 @@ public interface UserUserProfileJoin {
     String getFirstName();
 
     String getLastName();
-
-    String getImage();
 
     String getJobId();
 

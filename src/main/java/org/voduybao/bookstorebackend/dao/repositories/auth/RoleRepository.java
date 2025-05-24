@@ -1,8 +1,8 @@
-package org.voduybao.bookstorebackend.dao.repositories;
+package org.voduybao.bookstorebackend.dao.repositories.auth;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.voduybao.bookstorebackend.dao.entities.Role;
+import org.voduybao.bookstorebackend.dao.entities.auth.Role;
 
 
 public interface RoleRepository extends CrudRepository<Role, Integer> {
