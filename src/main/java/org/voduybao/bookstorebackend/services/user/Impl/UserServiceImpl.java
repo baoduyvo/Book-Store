@@ -5,9 +5,9 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.User;
-import org.voduybao.bookstorebackend.dao.repositories.UserRepository;
-import org.voduybao.bookstorebackend.dao.repositories.join.UserUserProfileJoin;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.repositories.user.UserRepository;
+import org.voduybao.bookstorebackend.dao.repositories.user.join.UserUserProfileJoin;
 import org.voduybao.bookstorebackend.dtos.UserDto;
 import org.voduybao.bookstorebackend.services.notification.EmailService;
 import org.voduybao.bookstorebackend.services.notification.SMSService;
@@ -42,9 +42,6 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findById(userID)
                 .orElseThrow(() -> new ResponseException(ResponseErrors.USER_NOT_FOUND));
 
-        if (!passwordUtils.checkPassword(request.getOldPassword(), user.getPassword()))
-            throw new ResponseException(ResponseErrors.AUTH_INVALID);
-
         user.setPassword(passwordUtils.hashPassword(request.getNewPassword()));
         userRepository.save(user);
     }
@@ -78,7 +75,7 @@ public class UserServiceImpl implements UserService {
         log.info("User Delete Account Get ID ...!");
         User user = userRepository.findById(userID)
                 .orElseThrow(() -> new ResponseException(ResponseErrors.USER_NOT_FOUND));
-        user.setIsStatus(true);
+        user.setIsActive(true);
         userRepository.save(user);
     }
 

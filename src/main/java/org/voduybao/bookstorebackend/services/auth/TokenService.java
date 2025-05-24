@@ -1,8 +1,8 @@
 package org.voduybao.bookstorebackend.services.auth;
 
 import jakarta.servlet.http.HttpServletResponse;
-import org.voduybao.bookstorebackend.dao.entities.Token;
-import org.voduybao.bookstorebackend.dao.entities.User;
+import org.voduybao.bookstorebackend.dao.entities.auth.Token;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
 
 
 public interface TokenService {

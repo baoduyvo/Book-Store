@@ -1,6 +1,6 @@
 package org.voduybao.bookstorebackend.services.auth;
 
-import org.voduybao.bookstorebackend.dao.entities.User;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
 
 import java.time.Instant;
 

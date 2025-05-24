@@ -2,11 +2,11 @@ package org.voduybao.bookstorebackend.dao.initializer;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.Permission;
-import org.voduybao.bookstorebackend.dao.entities.Role;
-import org.voduybao.bookstorebackend.dao.repositories.PermissionRepository;
-import org.voduybao.bookstorebackend.dao.repositories.RoleRepository;
-import org.voduybao.bookstorebackend.tools.contants.RoleEnum;
+import org.voduybao.bookstorebackend.dao.entities.auth.Permission;
+import org.voduybao.bookstorebackend.dao.entities.auth.Role;
+import org.voduybao.bookstorebackend.dao.repositories.auth.PermissionRepository;
+import org.voduybao.bookstorebackend.dao.repositories.auth.RoleRepository;
+import org.voduybao.bookstorebackend.tools.contants.e.RoleEnum;
 
 import java.util.HashSet;
 import java.util.Set;

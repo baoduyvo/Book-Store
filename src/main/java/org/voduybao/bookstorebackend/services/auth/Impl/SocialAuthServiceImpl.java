@@ -5,16 +5,21 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.User;
-import org.voduybao.bookstorebackend.dao.entities.UserProfile;
-import org.voduybao.bookstorebackend.dao.repositories.RoleRepository;
-import org.voduybao.bookstorebackend.dao.repositories.UserProfileRepository;
-import org.voduybao.bookstorebackend.dao.repositories.UserRepository;
+import org.voduybao.bookstorebackend.dao.entities.media.MediaGallery;
+import org.voduybao.bookstorebackend.dao.entities.media.UserMedia;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
+import org.voduybao.bookstorebackend.dao.repositories.auth.RoleRepository;
+import org.voduybao.bookstorebackend.dao.repositories.media.MediaGalleryRepository;
+import org.voduybao.bookstorebackend.dao.repositories.media.UserMediaRepository;
+import org.voduybao.bookstorebackend.dao.repositories.user.UserProfileRepository;
+import org.voduybao.bookstorebackend.dao.repositories.user.UserRepository;
 import org.voduybao.bookstorebackend.services.auth.SocialAuthService;
 import org.voduybao.bookstorebackend.services.auth.strategies.AuthStrategy;
 import org.voduybao.bookstorebackend.services.auth.strategies.FacebookAuthStrategy;
 import org.voduybao.bookstorebackend.services.auth.strategies.GoogleAuthStrategy;
-import org.voduybao.bookstorebackend.tools.contants.AuthProviderEnum;
+import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
+import org.voduybao.bookstorebackend.tools.contants.e.FileTypeEnum;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 
@@ -31,6 +36,10 @@ public class SocialAuthServiceImpl implements SocialAuthService {
     private RoleRepository roleRepository;
     @Setter(onMethod_ = @Autowired)
     private UserProfileRepository userProfileRepository;
+    @Setter(onMethod_ = @Autowired)
+    private MediaGalleryRepository mediaGalleryRepository;
+    @Setter(onMethod_ = @Autowired)
+    private UserMediaRepository userMediaRepository;
 
     @Setter(onMethod_ = @Autowired)
     private GoogleAuthStrategy googleAuthStrategy;
@@ -88,13 +97,25 @@ public class SocialAuthServiceImpl implements SocialAuthService {
                         .build()
         );
 
-        userProfileRepository.save(
+        UserProfile userProfile = userProfileRepository.save(
                 UserProfile.builder()
                         .user(user)
                         .nickname(name)
-                        .profileImage(picture)
                         .build()
         );
+
+        MediaGallery mediaGallery = mediaGalleryRepository.save(
+                MediaGallery.builder()
+                        .fileURL(picture)
+                        .fileType(FileTypeEnum.IMAGE)
+                        .type("avatar")
+                        .build()
+        );
+
+        userMediaRepository.save(UserMedia.builder()
+                .media(mediaGallery)
+                .user(userProfile)
+                .build());
 
         return user;
     }

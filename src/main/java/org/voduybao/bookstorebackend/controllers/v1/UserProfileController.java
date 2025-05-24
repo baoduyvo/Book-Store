@@ -1,14 +1,14 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.voduybao.bookstorebackend.dtos.AuthenDto;
-import org.voduybao.bookstorebackend.services.auth.AuthenService;
+import org.voduybao.bookstorebackend.dtos.UserProfileDto;
+import org.voduybao.bookstorebackend.services.user.UserProfileService;
+import org.voduybao.bookstorebackend.tools.http.Headers;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
 @Slf4j
@@ -18,32 +18,29 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequiredArgsConstructor
 public class UserProfileController {
     @Setter(onMethod_ = @Autowired)
-    private AuthenService authenService;
+    private UserProfileService userProfileService;
 
     @GetMapping("")
-    public Result getMyProfile(@RequestBody @Validated AuthenDto.RegisterRequest request) {
-        authenService.reigster(request);
-        return Result.success();
-    }
-
-    @GetMapping("/user/{user_id}")
-    public Result getProfile(@RequestBody @Validated AuthenDto.RegisterRequest request) {
-        authenService.reigster(request);
-        return Result.success();
+    public Result getMyProfile(@RequestHeader(value = Headers.X_USER_ID) int userID) {
+        var reponse = userProfileService.myProfile(userID);
+        return Result.content(reponse);
     }
 
     @PutMapping("")
-    public Result updateProfile(@RequestBody @Validated AuthenDto.LoginRequest request,
-                         HttpServletResponse response) {
-        var reponse = authenService.login(request, response);
-        return Result.content(reponse);
+    public Result updateProfile(
+            @RequestHeader(value = Headers.X_USER_ID) int userID,
+            @RequestBody @Validated UserProfileDto.UpdateProfileRequest request) {
+        userProfileService.updateProfile(userID, request);
+        return Result.success();
     }
 
     @PutMapping("/avatar")
-    public Result updateAvatar(@CookieValue(name = "refreshToken") String refreshToken,
-                               HttpServletResponse response) {
-        var reponse = authenService.refresh(refreshToken, response);
-        return Result.content(reponse);
+    public Result updateAvatar(
+            @RequestHeader(value = Headers.X_USER_ID) int userID,
+            @RequestBody @Validated UserProfileDto.UpdateAvatarRequest request
+    ) {
+        userProfileService.updateAvater(userID, request);
+        return Result.success();
     }
 
 }

@@ -18,6 +18,11 @@ public enum ResponseErrors {
     INVALID_REGISTRATION(ErrorCode.INVALID_REGISTRATION, "Invalid registration", HttpStatus.BAD_REQUEST),
     UNSUPPORTED_MEDIA_TYPE(ErrorCode.UNSUPPORTED_MEDIA_TYPE, "Unsupported media type", HttpStatus.BAD_REQUEST),
     PASSWORD_SAME(ErrorCode.PASSWORD_SAME, "Some password", HttpStatus.BAD_REQUEST),
+
+    EDUCATION_NOT_FOUND(ErrorCode.USER_NOT_FOUND, "Education not found", HttpStatus.BAD_REQUEST),
+    HOBBY_NOT_FOUND(ErrorCode.USER_NOT_FOUND, "Hobby not found", HttpStatus.BAD_REQUEST),
+    JOB_NOT_FOUND(ErrorCode.USER_NOT_FOUND, "Job not found", HttpStatus.BAD_REQUEST),
+
     PASSWORD_INCORRECT(ErrorCode.PASSWORD_INCORRECT, "Password incorrect", HttpStatus.BAD_REQUEST),
 
     EMAIL_VERIFIED(ErrorCode.EMAIL_VERIFIED, "Email is verified", HttpStatus.BAD_REQUEST),

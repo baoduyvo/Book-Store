@@ -8,7 +8,7 @@ import com.nimbusds.jwt.SignedJWT;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.User;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
 import org.voduybao.bookstorebackend.services.auth.JwtService;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;

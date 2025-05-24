@@ -25,13 +25,21 @@ public class SecurityConfig {
 
     private static final String[] postWhiteList = {
             "v1/authentication/register",
+            "v1/authentication/introspect",
             "v1/authentication/sign-in",
             "v1/authentication/sign-out",
-            "v1/users/forgot-password"
+            "v1/users/forgot-password",
+            "v1/otp/send",
+            "v1/otp/verify"
     };
     private static final String[] getWhiteList = {
             "v1/authentication/socail-login",
-            "v1/authentication/callback/**"
+            "v1/authentication/callback/**",
+            "/swagger-ui/**",
+            "/v3/api-docs/**",
+            "/swagger-ui.html",
+            "/swagger-resources/**",
+            "/v1/test/ping"
     };
 
     @Bean

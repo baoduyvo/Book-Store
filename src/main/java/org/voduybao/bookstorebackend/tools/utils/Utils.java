@@ -3,6 +3,7 @@ package org.voduybao.bookstorebackend.tools.utils;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import java.security.SecureRandom;
+import java.util.UUID;
 
 public class Utils {
     private static final String LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
@@ -11,12 +12,6 @@ public class Utils {
     private static final String SPECIAL_CHARS = "@#$%^&+=";
     private static final String ALL_CHARS = LOWERCASE + UPPERCASE + DIGITS + SPECIAL_CHARS;
     private static final int PASSWORD_LENGTH = 6;
-
-    public static void verifyEmail(String email) {
-        if (email == null || email.isEmpty()) {
-            throw new ResponseException(ResponseErrors.INVALID_EMAIL_FORMAT);
-        }
-    }
 
     public static String generateOtp() {
         SecureRandom random = new SecureRandom();
@@ -43,5 +38,13 @@ public class Utils {
             characters[randomIndex] = temp;
         }
         return new String(characters);
+    }
+
+    public static String generateRandomNumber() {
+        String uuid = UUID.randomUUID().toString().replaceAll("[^0-9]", "");
+        while (uuid.length() < 40) {
+            uuid += UUID.randomUUID().toString().replaceAll("[^0-9]", "");
+        }
+        return uuid.substring(0, 40);
     }
 }

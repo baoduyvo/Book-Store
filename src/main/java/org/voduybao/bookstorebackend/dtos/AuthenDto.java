@@ -4,6 +4,9 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
+import org.voduybao.bookstorebackend.tools.contants.e.RoleEnum;
+
+import java.util.List;
 
 public class AuthenDto {
     @Getter
@@ -46,6 +49,7 @@ public class AuthenDto {
         public boolean isEmail() {
             return phoneOrEmail.matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$");
         }
+
     }
 
     @Getter
@@ -60,7 +64,19 @@ public class AuthenDto {
     }
 
     @Getter
-    public static class LogoutRequest {
+    @Setter
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class UserResponse {
+        private Integer userId;
+        private String phone;
+        private String email;
+        private List<RoleEnum> role;
+    }
+
+    @Getter
+    public static class TokenRequest {
         @NotBlank(message = "Token cannot be null")
         private String accessToken;
     }

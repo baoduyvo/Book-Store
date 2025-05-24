@@ -23,7 +23,7 @@ public class Result extends ResponseEntity<Result.Data> {
     @Setter
     @Getter
     @JsonSerialize
-    static class Data {
+    public static class Data {
         @com.nimbusds.jose.shaded.gson.annotations.SerializedName("time")
         private Date time;
         @SerializedName("code")

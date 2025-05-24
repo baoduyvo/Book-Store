@@ -4,24 +4,31 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.Token;
-import org.voduybao.bookstorebackend.dao.entities.User;
-import org.voduybao.bookstorebackend.dao.repositories.RoleRepository;
-import org.voduybao.bookstorebackend.dao.repositories.TokenRepository;
-import org.voduybao.bookstorebackend.dao.repositories.UserRepository;
+import org.voduybao.bookstorebackend.dao.entities.auth.Role;
+import org.voduybao.bookstorebackend.dao.entities.auth.Token;
+import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.repositories.auth.RoleRepository;
+import org.voduybao.bookstorebackend.dao.repositories.auth.TokenRepository;
+import org.voduybao.bookstorebackend.dao.repositories.user.UserRepository;
 import org.voduybao.bookstorebackend.dtos.AuthenDto;
 import org.voduybao.bookstorebackend.services.auth.AuthenService;
 import org.voduybao.bookstorebackend.services.auth.JwtService;
 import org.voduybao.bookstorebackend.services.auth.SocialAuthService;
 import org.voduybao.bookstorebackend.services.auth.TokenService;
-import org.voduybao.bookstorebackend.tools.contants.AuthProviderEnum;
+import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
+import org.voduybao.bookstorebackend.tools.contants.e.RoleEnum;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.security.password.PasswordUtils;
 import org.voduybao.bookstorebackend.tools.utils.StrUtil;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Component
 @Slf4j(topic = "AUTHENTICATION-SERVICE")
@@ -42,6 +49,8 @@ public class AuthenServiceImpl implements AuthenService {
     private JwtService jwtService;
     @Setter(onMethod_ = @Autowired)
     private SocialAuthService socialAuthService;
+    private AuthenticationManagerBuilder authenticationManagerBuilder;
+
 
     @Override
     public void reigster(AuthenDto.RegisterRequest request) {
@@ -68,29 +77,33 @@ public class AuthenServiceImpl implements AuthenService {
             AuthenDto.LoginRequest request,
             HttpServletResponse response) {
         log.info("Authentication sign in ...!");
-        User user = null;
-        if (request.isEmail()) {
-            user = userRepository.findUserByEmail(request.getPhoneOrEmail())
-                    .orElseThrow(() -> new ResponseException(ResponseErrors.EMAIL_VERIFIED));
-        } else if (request.isPhone()) {
-            user = userRepository.findUserByPhone(request.getPhoneOrEmail())
-                    .orElseThrow(() -> new ResponseException(ResponseErrors.PHONE_VERIFIED));
-        }
+
+        User user = request.isEmail()
+                ? userRepository.findUserByEmail(request.getPhoneOrEmail())
+                .orElseThrow(() -> new ResponseException(ResponseErrors.EMAIL_VERIFIED))
+                : userRepository.findUserByPhone(request.getPhoneOrEmail())
+                .orElseThrow(() -> new ResponseException(ResponseErrors.PHONE_VERIFIED));
+
+        if (Boolean.FALSE.equals(user.getIsVerified()))
+            throw new ResponseException(ResponseErrors.ACCOUNT_EXISTS_WAIT_FOR_VERIFYING);
+
+        if (Boolean.FALSE.equals(user.getIsActive()))
+            throw new ResponseException(ResponseErrors.USER_IS_DEACTIVATED);
 
         if (!passwordUtils.checkPassword(request.getPassword(), user.getPassword()))
             throw new ResponseException(ResponseErrors.PASSWORD_INCORRECT);
 
-        Token token = tokenService.createAndSaveToken(user, response);
+        Token tokenData = tokenService.createAndSaveToken(user, response);
 
         return AuthenDto.LoginResponse.builder()
                 .userId(user.getUserId())
-                .accessToken(token.getAccessToken())
-                .refreshToken(token.getRefreshToken())
+                .accessToken(tokenData.getAccessToken())
+                .refreshToken(tokenData.getRefreshToken())
                 .build();
     }
 
     @Override
-    public void logout(AuthenDto.LogoutRequest request, HttpServletResponse response) {
+    public void logout(AuthenDto.TokenRequest request, HttpServletResponse response) {
         log.info("Authentication sign out ...!");
         String email = jwtService.extractAccessTokenEmail(request.getAccessToken());
         User user = userRepository.findUserByEmail(email)
@@ -133,6 +146,27 @@ public class AuthenServiceImpl implements AuthenService {
     }
 
     @Override
+    public AuthenDto.UserResponse introspect(AuthenDto.TokenRequest request) {
+        log.info("Authentication introspect token ...!");
+        String email = jwtService.extractAccessTokenEmail(request.getAccessToken());
+        User user = userRepository.findUserByEmail(email)
+                .orElseThrow(() -> new ResponseException(ResponseErrors.ACCOUNT_EXISTS));
+
+        jwtService.verificationToken(request.getAccessToken(), user);
+
+        return AuthenDto.UserResponse.builder()
+                .userId(user.getUserId())
+                .phone(user.getPhoneNumber())
+                .email(user.getEmail())
+                .role(
+                        user.getRoles().stream()
+                                .map(Role::getRoleName)
+                                .collect(Collectors.toList())
+                )
+                .build();
+    }
+
+    @Override
     public String socailAuthType(String loginType) {
         log.info("Authentication login return base url...!");
         return socialAuthService.baseUrl(loginType);
@@ -152,4 +186,8 @@ public class AuthenServiceImpl implements AuthenService {
                 .build();
     }
 
+    @Autowired
+    public void setAuthenticationManagerBuilder(AuthenticationManagerBuilder authenticationManagerBuilder) {
+        this.authenticationManagerBuilder = authenticationManagerBuilder;
+    }
 }

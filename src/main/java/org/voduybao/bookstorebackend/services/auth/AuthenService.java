@@ -8,9 +8,11 @@ public interface AuthenService {
 
     AuthenDto.LoginResponse login(AuthenDto.LoginRequest request, HttpServletResponse response);
 
-    void logout(AuthenDto.LogoutRequest request, HttpServletResponse response);
+    void logout(AuthenDto.TokenRequest request, HttpServletResponse response);
 
     AuthenDto.LoginResponse refresh(String refreshToken, HttpServletResponse response);
+
+    AuthenDto.UserResponse introspect(AuthenDto.TokenRequest request);
 
     String socailAuthType(String loginType);
 

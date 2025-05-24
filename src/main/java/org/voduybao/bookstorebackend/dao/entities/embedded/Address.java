@@ -14,7 +14,6 @@ import lombok.*;
 @Builder
 public class Address {
 
-    @Lob
     @Column(name = "address")
     private String address;
 

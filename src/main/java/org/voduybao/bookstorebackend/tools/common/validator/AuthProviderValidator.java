@@ -3,7 +3,7 @@ package org.voduybao.bookstorebackend.tools.common.validator;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import org.voduybao.bookstorebackend.tools.common.ValidAuthProvider;
-import org.voduybao.bookstorebackend.tools.contants.AuthProviderEnum;
+import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
 
 import java.util.Arrays;
 
