@@ -2,7 +2,6 @@ package org.voduybao.bookstorebackend.controllers.v1;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -56,11 +55,10 @@ public class UserController {
     }
 
     @PostMapping("/confirm-password")
-    public Result confirmPassword(
-            @RequestHeader(value = Headers.X_USER_ID) int userID,
-            @Validated @RequestBody UserDto.ConfirmForgotPasswordRequest request) {
-        userService.confirmPassword(userID, request);
+    public Result confirmPassword(@Validated @RequestBody UserDto.ConfirmForgotPasswordRequest request) {
+        userService.confirmPassword(request);
         return Result.success();
     }
+
 
 }

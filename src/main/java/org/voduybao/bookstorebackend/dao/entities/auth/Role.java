@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.dao.entities.auth;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.user.User;
@@ -14,6 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@JsonIgnoreProperties({"users"})
 @Table(name = "roles")
 public class Role {
 

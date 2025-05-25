@@ -5,20 +5,22 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.voduybao.bookstorebackend.dao.entities.auth.Otp;
 import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.bookstorebackend.dao.repositories.auth.OtpRepository;
 import org.voduybao.bookstorebackend.dao.repositories.user.UserRepository;
 import org.voduybao.bookstorebackend.dao.repositories.user.join.UserUserProfileJoin;
+import org.voduybao.bookstorebackend.dtos.OtpDto;
 import org.voduybao.bookstorebackend.dtos.UserDto;
-import org.voduybao.bookstorebackend.services.notification.EmailService;
-import org.voduybao.bookstorebackend.services.notification.SMSService;
+import org.voduybao.bookstorebackend.services.shared.OtpService;
 import org.voduybao.bookstorebackend.services.user.UserService;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import org.voduybao.bookstorebackend.tools.response.panigation.PaginationResult;
 import org.voduybao.bookstorebackend.tools.security.password.PasswordUtils;
 import org.voduybao.bookstorebackend.tools.utils.PaginationUtils;
-import org.voduybao.bookstorebackend.tools.utils.Utils;
 
+import java.time.Instant;
 import java.util.List;
 
 @Component
@@ -29,11 +31,11 @@ public class UserServiceImpl implements UserService {
 
     @Setter(onMethod_ = @Autowired)
     private UserRepository userRepository;
+    @Setter(onMethod_ = @Autowired)
+    private OtpRepository otpRepository;
 
     @Setter(onMethod_ = @Autowired)
-    private EmailService emailService;
-    @Setter(onMethod_ = @Autowired)
-    private SMSService smsService;
+    private OtpService otpService;
 
     @Override
     @Transactional
@@ -49,23 +51,30 @@ public class UserServiceImpl implements UserService {
     @Override
     public void forgotPassword(UserDto.ForgotPasswordRequest request) {
         log.info("User Forgot Password ...!");
-        String otp = Utils.generateOtp();
-        if (request.isEmail()) {
-            User user = userRepository.findUserByEmail(request.getPhoneOrEmail())
-                    .orElseThrow(() -> new ResponseException(ResponseErrors.EMAIL_VERIFIED));
-            emailService.sendVerifyOtp(user.getEmail(), otp);
-        } else if (request.isPhone()) {
-            User user = userRepository.findUserByPhone(request.getPhoneOrEmail())
-                    .orElseThrow(() -> new ResponseException(ResponseErrors.PHONE_VERIFIED));
-            smsService.sendVerifyOtp(user.getPhoneNumber(), otp);
-        }
+        otpService.sendOtp(new OtpDto.Request(request.getPhoneOrEmail(), null));
     }
 
     @Override
-    public void confirmPassword(int userID, UserDto.ConfirmForgotPasswordRequest request) {
+    public void confirmPassword(UserDto.ConfirmForgotPasswordRequest request) {
         log.info("User Confirm Forgot Password ...!");
-        User user = userRepository.findById(userID)
-                .orElseThrow(() -> new ResponseException(ResponseErrors.USER_NOT_FOUND));
+        User user = null;
+        if (request.isEmail()) {
+            user = userRepository.findUserByEmail(request.getPhoneOrEmail())
+                    .orElseThrow(() -> new ResponseException(ResponseErrors.EMAIL_VERIFIED));
+        } else if (request.isPhone()) {
+            user = userRepository.findUserByPhone(request.getPhoneOrEmail())
+                    .orElseThrow(() -> new ResponseException(ResponseErrors.PHONE_VERIFIED));
+        }
+
+        Otp otp = otpRepository.findOtp(request.getOtp())
+                .orElseThrow(() -> new ResponseException(ResponseErrors.VERIFICATION_CODE_NOT_FOUND));
+        if (otp.getExpiration().isBefore(Instant.now())) {
+            throw new ResponseException(ResponseErrors.VERIFICATION_CODE_EXPIRED);
+        }
+        if (!otp.getOtp().equals(request.getOtp())) {
+            throw new ResponseException(ResponseErrors.VERIFICATION_CODE_NOT_FOUND);
+        }
+
         user.setPassword(passwordUtils.hashPassword(request.getNewPassword()));
         userRepository.save(user);
     }
