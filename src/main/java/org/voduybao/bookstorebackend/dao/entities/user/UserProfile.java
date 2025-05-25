@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.dao.entities.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -26,9 +27,11 @@ public class UserProfile {
     @OneToOne
     @MapsId
     @JoinColumn(name = "user_id", nullable = false)
+    @JsonIgnore
     private User user;
 
     @OneToMany(mappedBy = "user")
+    @JsonIgnore
     private Set<UserMedia> uploadedMedia;
 
     @Size(max = 50)

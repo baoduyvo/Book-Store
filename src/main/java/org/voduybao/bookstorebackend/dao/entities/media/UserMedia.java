@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.dao.entities.media;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
@@ -21,10 +22,12 @@ public class UserMedia {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
+    @JsonIgnore
     private UserProfile user;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "media_id", nullable = false)
+    @JsonIgnore
     private MediaGallery media;
 
     @Column(name = "created_at", updatable = false)

@@ -1,7 +1,5 @@
 package org.voduybao.bookstorebackend.tools.utils;
 
-import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
-import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import java.security.SecureRandom;
 import java.util.UUID;
 

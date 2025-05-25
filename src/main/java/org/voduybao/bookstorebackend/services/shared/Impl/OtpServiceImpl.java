@@ -18,7 +18,7 @@ import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import java.time.Instant;
 
 @Component
-@Slf4j(topic = "OTP")
+@Slf4j(topic = "OTP-SERVICE")
 public class OtpServiceImpl implements OtpService {
     @Setter(onMethod_ = @Autowired)
     private OtpRepository otpRepository;

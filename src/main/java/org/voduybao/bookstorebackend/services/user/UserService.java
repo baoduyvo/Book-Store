@@ -9,7 +9,7 @@ public interface UserService {
 
     void forgotPassword(UserDto.ForgotPasswordRequest request);
 
-    void confirmPassword(int userID, UserDto.ConfirmForgotPasswordRequest request);
+    void confirmPassword(UserDto.ConfirmForgotPasswordRequest request);
 
     void deleteAccount(int userID);
 

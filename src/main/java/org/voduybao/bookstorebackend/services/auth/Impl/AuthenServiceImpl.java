@@ -4,10 +4,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.voduybao.bookstorebackend.dao.entities.auth.Role;
 import org.voduybao.bookstorebackend.dao.entities.auth.Token;
@@ -21,7 +17,6 @@ import org.voduybao.bookstorebackend.services.auth.JwtService;
 import org.voduybao.bookstorebackend.services.auth.SocialAuthService;
 import org.voduybao.bookstorebackend.services.auth.TokenService;
 import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
-import org.voduybao.bookstorebackend.tools.contants.e.RoleEnum;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.security.password.PasswordUtils;
@@ -49,8 +44,6 @@ public class AuthenServiceImpl implements AuthenService {
     private JwtService jwtService;
     @Setter(onMethod_ = @Autowired)
     private SocialAuthService socialAuthService;
-    private AuthenticationManagerBuilder authenticationManagerBuilder;
-
 
     @Override
     public void reigster(AuthenDto.RegisterRequest request) {
@@ -184,10 +177,5 @@ public class AuthenServiceImpl implements AuthenService {
                 .accessToken(token.getAccessToken())
                 .refreshToken(token.getRefreshToken())
                 .build();
-    }
-
-    @Autowired
-    public void setAuthenticationManagerBuilder(AuthenticationManagerBuilder authenticationManagerBuilder) {
-        this.authenticationManagerBuilder = authenticationManagerBuilder;
     }
 }

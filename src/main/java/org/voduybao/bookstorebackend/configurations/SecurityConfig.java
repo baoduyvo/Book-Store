@@ -28,6 +28,7 @@ public class SecurityConfig {
             "v1/authentication/introspect",
             "v1/authentication/sign-in",
             "v1/authentication/sign-out",
+            "v1/users/confirm-password",
             "v1/users/forgot-password",
             "v1/otp/send",
             "v1/otp/verify"
