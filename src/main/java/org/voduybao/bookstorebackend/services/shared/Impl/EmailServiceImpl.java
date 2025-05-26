@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.services.notification.Impl;
+package org.voduybao.bookstorebackend.services.shared.Impl;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
@@ -8,7 +8,7 @@ import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.voduybao.bookstorebackend.services.notification.EmailService;
+import org.voduybao.bookstorebackend.services.shared.EmailService;
 
 @Component
 @Slf4j(topic = "EMAIL")

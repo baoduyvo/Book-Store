@@ -3,6 +3,9 @@ package org.voduybao.bookstorebackend.dao.entities.media;
 import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.embedded.FileEntry;
+import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
+import org.voduybao.bookstorebackend.dao.entities.merchandise.Book;
+import org.voduybao.bookstorebackend.dao.entities.merchandise.Publisher;
 import org.voduybao.bookstorebackend.tools.contants.e.FileTypeEnum;
 
 import java.time.Instant;
@@ -56,21 +59,21 @@ public class MediaGallery {
     @OneToMany(mappedBy = "media")
     private Set<UserMedia> usedByUsers;
 
-    private Instant createdAt;
-    private Instant updatedAt;
+    @OneToMany(mappedBy = "image")
+    private Set<Book> books;
+
+    @OneToMany(mappedBy = "image")
+    private Set<Publisher> publishers;
+
+    @Embedded
+    private MetaDataTimeStampedEntity timeStamp;
 
     @PrePersist
     public void handleBeforeCreate() {
-        if(this.isActive == null || this.createdAt == null || this.isDeleted == null) {
+        if(this.isActive == null  || this.isDeleted == null) {
             this.isActive = true;
             this.isDeleted = false;
-            this.createdAt = Instant.now();
-
         }
     }
 
-    @PreUpdate
-    public void handleBeforeUpdate() {
-        this.updatedAt = Instant.now();
-    }
 }

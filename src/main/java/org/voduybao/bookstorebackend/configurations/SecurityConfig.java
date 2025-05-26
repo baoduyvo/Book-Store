@@ -59,7 +59,7 @@ public class SecurityConfig {
                 .jwt(jwtConfigurer -> jwtConfigurer.decoder(customJwtDecoder))
                 .authenticationEntryPoint(customAuthenticationEntryPoint)
         );
-
+        http.formLogin(f -> f.disable());
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();

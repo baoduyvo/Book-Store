@@ -3,6 +3,7 @@ package org.voduybao.bookstorebackend.dao.entities.media;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
 import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
 
 import java.time.Instant;
@@ -30,19 +31,6 @@ public class UserMedia {
     @JsonIgnore
     private MediaGallery media;
 
-    @Column(name = "created_at", updatable = false)
-    private Instant createdAt;
-
-    @Column(name = "updated_at")
-    private Instant updatedAt;
-
-    @PrePersist
-    public void beforeCreate() {
-        this.createdAt = Instant.now();
-    }
-
-    @PreUpdate
-    public void beforeUpdate() {
-        this.updatedAt = Instant.now();
-    }
+    @Embedded
+    private MetaDataTimeStampedEntity timeStamp;
 }

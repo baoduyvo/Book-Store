@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.embedded.Address;
+import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
 import org.voduybao.bookstorebackend.dao.entities.media.UserMedia;
 import org.voduybao.bookstorebackend.tools.contants.e.GenderEnum;
 
@@ -75,19 +76,6 @@ public class UserProfile {
     @Embedded
     private Address address;
 
-    @Column(name = "created_at", updatable = false)
-    private Instant createdAt;
-
-    @Column(name = "updated_at")
-    private Instant updatedAt;
-
-    @PrePersist
-    public void handleBeforeCreate() {
-        this.createdAt = Instant.now();
-    }
-
-    @PreUpdate
-    public void handleBeforeUpdate() {
-        this.updatedAt = Instant.now();
-    }
+    @Embedded
+    private MetaDataTimeStampedEntity timeStamp;
 }

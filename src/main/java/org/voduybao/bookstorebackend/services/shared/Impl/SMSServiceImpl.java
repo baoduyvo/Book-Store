@@ -1,11 +1,11 @@
-package org.voduybao.bookstorebackend.services.notification.Impl;
+package org.voduybao.bookstorebackend.services.shared.Impl;
 
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.voduybao.bookstorebackend.dao.client.StringeeSmsClient;
-import org.voduybao.bookstorebackend.services.notification.SMSService;
+import org.voduybao.bookstorebackend.services.shared.SMSService;
 
 import java.util.HashMap;
 import java.util.Map;

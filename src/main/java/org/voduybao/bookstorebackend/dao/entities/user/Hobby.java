@@ -2,6 +2,7 @@ package org.voduybao.bookstorebackend.dao.entities.user;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
 
 import java.time.Instant;
 
@@ -22,19 +23,6 @@ public class Hobby {
     @Column(name = "title", length = 255)
     private String title;
 
-    @Column(name = "created_at", updatable = false)
-    private Instant createdAt;
-
-    @Column(name = "updated_at")
-    private Instant updatedAt;
-
-    @PrePersist
-    public void handleBeforeCreate() {
-        this.createdAt = Instant.now();
-    }
-
-    @PreUpdate
-    public void handleBeforeUpdate() {
-        this.updatedAt = Instant.now();
-    }
+    @Embedded
+    private MetaDataTimeStampedEntity timeStamp;
 }
