@@ -1,0 +1,73 @@
+package org.voduybao.bookstorebackend.dao.entities.merchandise;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
+import org.voduybao.bookstorebackend.dao.entities.embedded.SizeAndWeight;
+import org.voduybao.bookstorebackend.dao.entities.media.MediaGallery;
+
+import java.time.LocalDate;
+
+@Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name = "books")
+public class Book {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "book_id")
+    private Integer id;
+
+    @Column(name = "title", length = 255, nullable = false)
+    private String title;
+
+    @Column(name = "description", columnDefinition = "TEXT")
+    private String description;
+
+    @Column(name = "price", nullable = false)
+    private Integer price;
+
+    @Column(name = "publication_date")
+    private LocalDate publicationDate;
+
+    @Column(name = "isbn", length = 20)
+    private String isbn;
+
+    @Column(name = "language", length = 50)
+    private String language;
+
+    @Column(name = "pages")
+    private Integer pages;
+
+    @Column(name = "format", length = 50)
+    private String format;
+
+    @Embedded
+    private SizeAndWeight sizeAndWeight;
+
+    @Column(name = "archived")
+    private Boolean archived;
+
+    @Embedded
+    private MetaDataTimeStampedEntity timeStamp;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_id", nullable = false)
+    @JsonIgnore
+    private Product product;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "media_gallery_id", nullable = false)
+    @JsonIgnore
+    private MediaGallery image;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "publisher_id", nullable = false)
+    @JsonIgnore
+    private Publisher publisher;
+}
