@@ -10,7 +10,7 @@ import org.voduybao.bookstorebackend.dao.entities.user.User;
 import org.voduybao.bookstorebackend.dao.repositories.auth.OtpRepository;
 import org.voduybao.bookstorebackend.dao.repositories.user.UserRepository;
 import org.voduybao.bookstorebackend.dtos.OtpDto;
-import org.voduybao.bookstorebackend.services.notification.EmailService;
+import org.voduybao.bookstorebackend.services.shared.EmailService;
 import org.voduybao.bookstorebackend.services.shared.OtpService;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;

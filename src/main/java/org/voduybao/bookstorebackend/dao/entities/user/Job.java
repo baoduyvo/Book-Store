@@ -2,8 +2,8 @@ package org.voduybao.bookstorebackend.dao.entities.user;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 
-import java.time.Instant;
 
 @Entity
 @Getter
@@ -12,7 +12,7 @@ import java.time.Instant;
 @NoArgsConstructor
 @Builder
 @Table(name = "jobs")
-public class Job {
+public class Job extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,19 +22,4 @@ public class Job {
     @Column(name = "title", length = 255)
     private String title;
 
-    @Column(name = "created_at", updatable = false)
-    private Instant createdAt;
-
-    @Column(name = "updated_at")
-    private Instant updatedAt;
-
-    @PrePersist
-    public void handleBeforeCreate() {
-        this.createdAt = Instant.now();
-    }
-
-    @PreUpdate
-    public void handleBeforeUpdate() {
-        this.updatedAt = Instant.now();
-    }
 }

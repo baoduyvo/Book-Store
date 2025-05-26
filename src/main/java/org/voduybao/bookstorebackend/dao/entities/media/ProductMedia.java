@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
+import org.voduybao.bookstorebackend.dao.entities.merchandise.Product;
 
 @Entity
 @Getter
@@ -12,17 +12,20 @@ import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "user_media")
-public class UserMedia extends TimeStamped {
+@Table(name = "product_media")
+public class ProductMedia extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "sequence")
+    private Integer sequence = 1;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "product_id", nullable = false)
     @JsonIgnore
-    private UserProfile user;
+    private Product product;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "media_id", nullable = false)

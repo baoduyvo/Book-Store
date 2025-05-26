@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.services.notification;
+package org.voduybao.bookstorebackend.services.shared;
 
 import jakarta.validation.constraints.Size;
 import org.springframework.stereotype.Service;

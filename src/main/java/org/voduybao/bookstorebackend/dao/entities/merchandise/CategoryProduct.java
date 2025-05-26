@@ -1,10 +1,9 @@
-package org.voduybao.bookstorebackend.dao.entities.media;
+package org.voduybao.bookstorebackend.dao.entities.merchandise;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
 
 @Entity
 @Getter
@@ -12,20 +11,21 @@ import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "user_media")
-public class UserMedia extends TimeStamped {
+@Table(name = "category_product")
+public class CategoryProduct extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "category_id", nullable = false)
     @JsonIgnore
-    private UserProfile user;
+    private Category category;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "media_id", nullable = false)
+    @JoinColumn(name = "product_id", nullable = false)
     @JsonIgnore
-    private MediaGallery media;
+    private Product product;
 }

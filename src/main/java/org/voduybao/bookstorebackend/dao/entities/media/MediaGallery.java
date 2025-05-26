@@ -2,10 +2,12 @@ package org.voduybao.bookstorebackend.dao.entities.media;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.FileEntry;
+import org.voduybao.bookstorebackend.dao.entities.common.embedded.FileEntry;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.bookstorebackend.dao.entities.merchandise.Book;
+import org.voduybao.bookstorebackend.dao.entities.merchandise.Publisher;
 import org.voduybao.bookstorebackend.tools.contants.e.FileTypeEnum;
 
-import java.time.Instant;
 import java.util.Set;
 
 @Entity
@@ -15,7 +17,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Table(name = "media_gallery")
-public class MediaGallery {
+public class MediaGallery extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,29 +50,21 @@ public class MediaGallery {
     private String mimeType;
 
     @Column(name = "is_active")
-    private Boolean isActive;
+    private Boolean isActive = true;
 
     @Column(name = "is_deleted")
-    private Boolean isDeleted;
+    private Boolean isDeleted = false;
 
     @OneToMany(mappedBy = "media")
     private Set<UserMedia> usedByUsers;
 
-    private Instant createdAt;
-    private Instant updatedAt;
+    @OneToMany(mappedBy = "media")
+    private Set<ProductMedia> productMedia;
 
-    @PrePersist
-    public void handleBeforeCreate() {
-        if(this.isActive == null || this.createdAt == null || this.isDeleted == null) {
-            this.isActive = true;
-            this.isDeleted = false;
-            this.createdAt = Instant.now();
+    @OneToMany(mappedBy = "image")
+    private Set<Book> books;
 
-        }
-    }
+    @OneToMany(mappedBy = "image")
+    private Set<Publisher> publishers;
 
-    @PreUpdate
-    public void handleBeforeUpdate() {
-        this.updatedAt = Instant.now();
-    }
 }

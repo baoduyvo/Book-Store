@@ -3,7 +3,7 @@ package org.voduybao.bookstorebackend.mapper;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.voduybao.bookstorebackend.dao.entities.embedded.Address;
+import org.voduybao.bookstorebackend.dao.entities.common.embedded.Address;
 import org.voduybao.bookstorebackend.dao.entities.user.Education;
 import org.voduybao.bookstorebackend.dao.entities.user.Hobby;
 import org.voduybao.bookstorebackend.dao.entities.user.Job;
