@@ -1,8 +1,7 @@
-package org.voduybao.bookstorebackend.dao.entities.embedded;
+package org.voduybao.bookstorebackend.dao.entities.common.embedded;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Embeddable
@@ -11,7 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SizeAndWeight {
+public class DimensionAndWeight {
 
     @Column(name = "dimensions", length = 50)
     private String dimensions;

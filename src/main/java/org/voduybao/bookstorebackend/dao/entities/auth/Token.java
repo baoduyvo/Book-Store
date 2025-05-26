@@ -42,14 +42,13 @@ public class Token {
     private Date expiredAt;
 
     @Column(name = "revoked", nullable = false)
-    private boolean revoked;
+    private boolean revoked = false;
 
     @PrePersist
     public void handleBeforeCreate() {
         if (this.expiredAt == null) {
             this.expiredAt = Date.from(Instant.now().plus(60, ChronoUnit.MINUTES));
         }
-        this.revoked = false;
     }
 
 }

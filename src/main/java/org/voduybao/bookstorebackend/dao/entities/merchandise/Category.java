@@ -5,9 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 
-import java.time.Instant;
 import java.util.List;
 import java.util.Set;
 
@@ -18,7 +17,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Table(name = "categories")
-public class Category {
+public class Category extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,7 +31,7 @@ public class Category {
     private String description;
 
     @Column(name = "archived")
-    private Boolean archived;
+    private Boolean archived = false;
 
     @ManyToOne
     @JoinColumn(name = "parent_id")
@@ -46,7 +45,4 @@ public class Category {
     @OneToMany(mappedBy = "category")
     @JsonIgnore
     private Set<CategoryProduct> categories;
-
-    @Embedded
-    private MetaDataTimeStampedEntity timeStamp;
 }

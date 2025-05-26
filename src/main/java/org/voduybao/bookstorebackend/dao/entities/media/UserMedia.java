@@ -3,10 +3,8 @@ package org.voduybao.bookstorebackend.dao.entities.media;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 import org.voduybao.bookstorebackend.dao.entities.user.UserProfile;
-
-import java.time.Instant;
 
 @Entity
 @Getter
@@ -15,7 +13,7 @@ import java.time.Instant;
 @NoArgsConstructor
 @Builder
 @Table(name = "user_media")
-public class UserMedia {
+public class UserMedia extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +28,4 @@ public class UserMedia {
     @JoinColumn(name = "media_id", nullable = false)
     @JsonIgnore
     private MediaGallery media;
-
-    @Embedded
-    private MetaDataTimeStampedEntity timeStamp;
 }

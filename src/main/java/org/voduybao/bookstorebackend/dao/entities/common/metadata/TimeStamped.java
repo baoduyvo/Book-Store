@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.dao.entities.embedded;
+package org.voduybao.bookstorebackend.dao.entities.common.metadata;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +10,7 @@ import java.time.Instant;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public abstract class MetaDataTimeStamped {
+public abstract class TimeStamped {
 
     @Column(name = "created_at", updatable = false)
     private Instant createdAt;

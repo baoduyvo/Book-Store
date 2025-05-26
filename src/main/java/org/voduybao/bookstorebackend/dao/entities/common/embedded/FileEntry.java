@@ -1,8 +1,7 @@
-package org.voduybao.bookstorebackend.dao.entities.embedded;
+package org.voduybao.bookstorebackend.dao.entities.common.embedded;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Embeddable

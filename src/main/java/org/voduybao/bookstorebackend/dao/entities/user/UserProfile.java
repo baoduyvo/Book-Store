@@ -4,12 +4,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.Address;
-import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
+import org.voduybao.bookstorebackend.dao.entities.common.embedded.Address;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 import org.voduybao.bookstorebackend.dao.entities.media.UserMedia;
 import org.voduybao.bookstorebackend.tools.contants.e.GenderEnum;
 
-import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -20,7 +19,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Table(name = "user_profile")
-public class UserProfile {
+public class UserProfile extends TimeStamped {
 
     @Id
     private Integer userId;
@@ -75,7 +74,4 @@ public class UserProfile {
 
     @Embedded
     private Address address;
-
-    @Embedded
-    private MetaDataTimeStampedEntity timeStamp;
 }

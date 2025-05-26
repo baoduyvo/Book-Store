@@ -3,7 +3,7 @@ package org.voduybao.bookstorebackend.dtos;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.Setter;
-import org.voduybao.bookstorebackend.dao.entities.embedded.Address;
+import org.voduybao.bookstorebackend.dao.entities.common.embedded.Address;
 import org.voduybao.bookstorebackend.tools.contants.e.GenderEnum;
 
 public class UserProfileDto {

@@ -2,9 +2,7 @@ package org.voduybao.bookstorebackend.dao.entities.user;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
-
-import java.time.Instant;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 
 @Entity
 @Getter
@@ -13,7 +11,7 @@ import java.time.Instant;
 @NoArgsConstructor
 @Builder
 @Table(name = "hobbies")
-public class Hobby {
+public class Hobby extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +21,4 @@ public class Hobby {
     @Column(name = "title", length = 255)
     private String title;
 
-    @Embedded
-    private MetaDataTimeStampedEntity timeStamp;
 }

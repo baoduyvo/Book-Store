@@ -3,8 +3,8 @@ package org.voduybao.bookstorebackend.dao.entities.merchandise;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
-import org.voduybao.bookstorebackend.dao.entities.embedded.SizeAndWeight;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.bookstorebackend.dao.entities.common.embedded.DimensionAndWeight;
 import org.voduybao.bookstorebackend.dao.entities.media.MediaGallery;
 
 import java.time.LocalDate;
@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 @Table(name = "books")
-public class Book {
+public class Book extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,14 +47,11 @@ public class Book {
     @Column(name = "format", length = 50)
     private String format;
 
-    @Embedded
-    private SizeAndWeight sizeAndWeight;
-
     @Column(name = "archived")
-    private Boolean archived;
+    private Boolean archived = false;
 
     @Embedded
-    private MetaDataTimeStampedEntity timeStamp;
+    private DimensionAndWeight sizeAndWeight;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", nullable = false)

@@ -3,12 +3,9 @@ package org.voduybao.bookstorebackend.dao.entities.merchandise;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.embedded.Address;
-import org.voduybao.bookstorebackend.dao.entities.embedded.MetaDataTimeStampedEntity;
-import org.voduybao.bookstorebackend.dao.entities.embedded.SizeAndWeight;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 import org.voduybao.bookstorebackend.dao.entities.media.MediaGallery;
 
-import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -18,7 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Table(name = "publishers")
-public class Publisher {
+public class Publisher extends TimeStamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,9 +30,6 @@ public class Publisher {
 
     @Column(name = "contact", columnDefinition = "TEXT")
     private String contact;
-
-    @Embedded
-    private MetaDataTimeStampedEntity timeStamp;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "media_gallery_id", nullable = false)
