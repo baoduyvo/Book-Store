@@ -16,7 +16,7 @@ import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 
 import java.util.Optional;
 
-@Component
+@Component("USER-PROFILE-MAPPER")
 public class UserProfileMapper {
 
     @Setter(onMethod_ = @Autowired)
