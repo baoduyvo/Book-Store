@@ -18,7 +18,7 @@ import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import org.voduybao.bookstorebackend.tools.response.panigation.PaginationResult;
 import org.voduybao.bookstorebackend.tools.security.password.PasswordUtils;
-import org.voduybao.bookstorebackend.tools.utils.PaginationUtils;
+import org.voduybao.bookstorebackend.tools.response.panigation.PaginationUtils;
 
 import java.time.Instant;
 import java.util.List;
