@@ -12,6 +12,9 @@ public interface CategoryRepository extends JpaRepository<Category, Integer> {
     @Query(value = "select category_id from categories where category_id = :id", nativeQuery = true)
     Integer checkExistIdBy(@Param("id") Integer id);
 
+    @Query(value = "select * from categories where parent_id = :id limit 1", nativeQuery = true)
+    Category findFirstByParentId(@Param("id") Integer parentId);
+
     @Query(nativeQuery = true, value = """
             SELECT * FROM categories
                         WHERE lower(name) = lower(:name) and (:id is null or category_id != :id)
@@ -24,9 +27,6 @@ public interface CategoryRepository extends JpaRepository<Category, Integer> {
     @Query(value = "select category_id from categories where parent_id = :id limit 1", nativeQuery = true)
     Integer checkExistParentId(@Param("id") Integer id);
 
-    @Query(value = "select * from categories where parent_id = :id limit 1", nativeQuery = true)
-    Category findFirstByParentId(@Param("id") Integer parentId);
-
     @Query(nativeQuery = true, value = """
             SELECT * FROM  categories c WHERE parent_id IS NOT NULL AND archived = false
             LIMIT :limit 
@@ -34,6 +34,11 @@ public interface CategoryRepository extends JpaRepository<Category, Integer> {
             """)
     List<Category> findFirstByParentIdIsNotNull(@Param("limit") Integer limit,
                                                 @Param("offset") Integer offset);
+
+    @Query(nativeQuery = true, value = """
+            SELECT * FROM  categories c WHERE parent_id IS NOT NULL AND archived = false
+            """)
+    List<Category> getByParentIdIsNotNullAndArchivedFalse();
 
     @Query(nativeQuery = true, value = """
             SELECT COUNT(*) FROM categories WHERE parent_id IS NOT NULL

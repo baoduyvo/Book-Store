@@ -8,44 +8,18 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.voduybao.bookstorebackend.dtos.CategoryDto;
 import org.voduybao.bookstorebackend.services.merchandise.CategoryService;
-import org.voduybao.bookstorebackend.services.merchandise.CategorySyncService;
 import org.voduybao.bookstorebackend.tools.contants.a.AdminRequired;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
 @Slf4j
 @RestController
 @Validated
-@RequestMapping("/v1/categories")
+@RequestMapping("/v1/products")
 @RequiredArgsConstructor
-public class CategoryController {
+public class ProductController {
 
     @Setter(onMethod_ = @Autowired)
     private CategoryService categoryService;
-    @Setter(onMethod_ = @Autowired)
-    private CategorySyncService categorySyncService;
-
-    @GetMapping("")
-    public Result listAndSearch(
-            @RequestParam(name = "keyword", required = false) String keyword,
-            @RequestParam(value = "page", defaultValue = "1") Integer page,
-            @RequestParam(value = "size", defaultValue = "10") Integer size) {
-        var reponse = categorySyncService.listAndSearch(keyword, page, size);
-        return Result.content(reponse);
-    }
-
-    @AdminRequired
-    @PostMapping("/sync-all")
-    public Result syncSaveAll() {
-        categorySyncService.syncSaveAll();
-        return Result.success();
-    }
-
-    @AdminRequired
-    @DeleteMapping("/sync-all")
-    public Result syncDeleteAll() {
-        categorySyncService.syncdeleteAll();
-        return Result.success();
-    }
 
     @AdminRequired
     @PostMapping("")

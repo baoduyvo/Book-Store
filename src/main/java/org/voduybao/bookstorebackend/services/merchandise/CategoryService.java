@@ -1,12 +1,8 @@
 package org.voduybao.bookstorebackend.services.merchandise;
 
-import org.voduybao.bookstorebackend.dao.entities.merchandise.Category;
 import org.voduybao.bookstorebackend.dtos.CategoryDto;
-import org.voduybao.bookstorebackend.tools.response.panigation.PaginationResult;
 
-public interface CategoryServeice {
-
-    PaginationResult<Category> list(int page, int size);
+public interface CategoryService {
 
     void create(CategoryDto.CreatorRequest request);
 
