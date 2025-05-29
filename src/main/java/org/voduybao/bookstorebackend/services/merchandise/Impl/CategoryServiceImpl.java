@@ -7,11 +7,10 @@ import org.springframework.stereotype.Component;
 import org.voduybao.bookstorebackend.dao.entities.merchandise.Category;
 import org.voduybao.bookstorebackend.dao.repositories.merchandise.CategoryRepository;
 import org.voduybao.bookstorebackend.dtos.CategoryDto;
-import org.voduybao.bookstorebackend.services.merchandise.CategoryServeice;
+import org.voduybao.bookstorebackend.services.merchandise.CategoryService;
+import org.voduybao.bookstorebackend.services.merchandise.CategorySyncService;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
-import org.voduybao.bookstorebackend.tools.response.panigation.PaginationResult;
-import org.voduybao.bookstorebackend.tools.response.panigation.PaginationUtils;
 
 import java.util.List;
 import java.util.Objects;
@@ -21,25 +20,16 @@ import static org.voduybao.bookstorebackend.tools.exceptions.error.ResponseError
 
 @Component
 @Slf4j(topic = "CATEGORY-SERVICE")
-public class CategoryServiceImpl implements CategoryServeice {
+public class CategoryServiceImpl implements CategoryService {
 
     @Setter(onMethod_ = @Autowired)
     private CategoryRepository categoryRepository;
 
+    @Setter(onMethod_ = @Autowired)
+    private CategorySyncService categorySyncService;
+
     private static final String SPECIAL_CHAR = "[\\p{L}\\p{N}\\s]+";
     private final static List<Integer> DEFAULT_PARENT_CATE = List.of(1, 2, 3, 4, 5);
-
-    @Override
-    public PaginationResult<Category> list(int page, int size) {
-        log.info("Category Get List Categories With Paginations ...!");
-        PaginationUtils.PaginationResult pagination = PaginationUtils.validateAndConvert(page, size);
-
-        List<Category> categories = categoryRepository.findFirstByParentIdIsNotNull(pagination.pageSize(), pagination.offset());
-
-        int total = Math.toIntExact(categoryRepository.count());
-
-        return new PaginationResult<>(total, categories, page, size);
-    }
 
     @Override
     public void create(CategoryDto.CreatorRequest request) {
@@ -60,7 +50,9 @@ public class CategoryServiceImpl implements CategoryServeice {
                 .parent(categoryParent)
                 .build();
 
-        categoryRepository.save(category);
+        category = categoryRepository.save(category);
+
+        categorySyncService.syncSaveById(category.getId());
     }
 
     @Override

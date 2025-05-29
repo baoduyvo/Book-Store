@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.voduybao.bookstorebackend.dtos.CategoryDto;
-import org.voduybao.bookstorebackend.services.merchandise.CategoryServeice;
+import org.voduybao.bookstorebackend.services.merchandise.CategoryService;
 import org.voduybao.bookstorebackend.tools.contants.a.AdminRequired;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
@@ -19,27 +19,19 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 public class ProductController {
 
     @Setter(onMethod_ = @Autowired)
-    private CategoryServeice categoryServeice;
-
-    @GetMapping("")
-    public Result list(
-            @RequestParam(value = "page", defaultValue = "1") Integer page,
-            @RequestParam(value = "size", defaultValue = "10") Integer size) {
-        var reponse = categoryServeice.list(page, size);
-        return Result.content(reponse);
-    }
+    private CategoryService categoryService;
 
     @AdminRequired
     @PostMapping("")
     public Result create(@Validated @RequestBody CategoryDto.CreatorRequest request) {
-        categoryServeice.create(request);
+        categoryService.create(request);
         return Result.success();
     }
 
     @AdminRequired
     @DeleteMapping("/{id}")
     public Result deleteCategory(@PathVariable("id") Integer id) {
-        categoryServeice.deleteChild(id);
+        categoryService.deleteChild(id);
         return Result.success();
     }
 
@@ -49,7 +41,7 @@ public class ProductController {
             @Validated @RequestBody CategoryDto.UpdateParentRequest updateParentDto,
             @PathVariable("id") Integer id
     ) {
-        categoryServeice.update(id, updateParentDto);
+        categoryService.update(id, updateParentDto);
         return Result.success();
     }
 }
