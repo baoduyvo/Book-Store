@@ -29,7 +29,7 @@ public class CategoryServiceImpl implements CategoryService {
     private CategorySyncService categorySyncService;
 
     private static final String SPECIAL_CHAR = "[\\p{L}\\p{N}\\s]+";
-    private final static List<Integer> DEFAULT_PARENT_CATE = List.of(1, 2, 3, 4, 5);
+    private final static List<Integer> DEFAULT_PARENT_CATE = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
     @Override
     public void create(CategoryDto.CreatorRequest request) {

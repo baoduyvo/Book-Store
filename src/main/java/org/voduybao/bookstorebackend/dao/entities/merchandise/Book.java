@@ -54,11 +54,6 @@ public class Book extends TimeStamped {
     private DimensionAndWeight sizeAndWeight;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id", nullable = false)
-    @JsonIgnore
-    private Product product;
-
-    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "media_gallery_id", nullable = false)
     @JsonIgnore
     private MediaGallery image;

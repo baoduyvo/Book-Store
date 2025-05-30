@@ -3,7 +3,6 @@ package org.voduybao.bookstorebackend.dao.entities.merchandise;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 
 @Entity
 @Getter
@@ -12,7 +11,7 @@ import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 @NoArgsConstructor
 @Builder
 @Table(name = "category_product")
-public class CategoryProduct extends TimeStamped {
+public class CategoryProduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

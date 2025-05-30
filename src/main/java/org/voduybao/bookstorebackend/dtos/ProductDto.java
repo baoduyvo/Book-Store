@@ -1,43 +1,42 @@
 package org.voduybao.bookstorebackend.dtos;
 
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
-import lombok.Data;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
 import lombok.Getter;
+import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class ProductDto {
     @Getter
-    public static class CreatorRequest {
-        @NotNull(message = "Name is not null")
-        @NotEmpty(message = "Name is required")
-        @Size(max = 255, message = "Name must not exceed 255 characters")
-        @Pattern(regexp = "[\\p{L}\\p{N}\\s]+", message = "Name must not contain special characters")
-        private String name;
-        private String description;
-        @NotNull(message = "Parent Id must contain")
-        private Integer parentId;
-    }
+    @Setter
+    public static class CreatorProductRequest {
+        @NotBlank(message = "Title not empty")
+        @NotNull(message = "Title is required")
+        String title;
 
-    @Data
-    public static class UpdateParentRequest{
+        @NotNull(message = "description is required")
+        String description;
 
-        private Integer parentId;
+        @NotNull(message = "Price is required")
+        @DecimalMin(value = "0.0", inclusive = false, message = "Price must be greater than 0")
+        BigDecimal price;
 
-        @NotEmpty(message = "Name is required")
-        @Size(max = 255, message = "Name must not exceed 255 characters")
-        @Pattern(regexp = "[\\p{L}\\p{N}\\s]+", message = "Name must not contain special characters")
-        private String name;
+        @NotNull(message = "cover_image_id is required")
+        Long coverImageId;
 
-        private String description;
-    }
+        List<Integer> authorIds;
 
-    @Getter
-    public static class CategoryAssignmentRequest{
-        @NotNull(message = "category ids is required")
-        private List<Integer> categoryIds;
+        String publicationDate;
+
+        List<Integer> categoryIds;
+
+        List<Long> mediaIds;
+
+        Long mindMapMediaId;
+
+        @Valid
+        List<OptionDto.ProductOptionGroup> productOptionGroups;
     }
 }
