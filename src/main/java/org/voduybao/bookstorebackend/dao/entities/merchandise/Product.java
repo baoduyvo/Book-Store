@@ -30,9 +30,29 @@ public class Product extends TimeStamped {
 
     @OneToMany(mappedBy = "product")
     @JsonIgnore
-    private Set<CategoryProduct> products;
+    private Set<CategoryProduct> categories;
 
     @OneToMany(mappedBy = "product")
     @JsonIgnore
-    private Set<Book> books;
+    private Set<ProductProductBundle> bundles;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<ProductMadeIn> madeIns;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<ProductTrademark> trademarks;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<ProductHashTag> hashTags;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<ProductGroupOption> groups;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<Variation> variations;
 }

@@ -31,7 +31,7 @@ public class OpenApiConfig {
         return GroupedOpenApi.builder()
                 .group("bookstore-public")
                 .packagesToScan("org.voduybao.bookstorebackend.controllers.v2")
-                .pathsToMatch("/api/**")
+                .pathsToMatch("/api/test/**")
                 .build();
     }
 }

@@ -36,11 +36,14 @@ public class SecurityConfig {
     private static final String[] getWhiteList = {
             "v1/authentication/socail-login",
             "v1/authentication/callback/**",
+
             "/swagger-ui/**",
             "/v3/api-docs/**",
             "/swagger-ui.html",
             "/swagger-resources/**",
-            "/v1/test/ping",
+
+            "/api/test/1",
+            "/api/test/2",
 
             "/v1/categories",
     };

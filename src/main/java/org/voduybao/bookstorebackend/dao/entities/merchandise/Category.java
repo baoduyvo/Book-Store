@@ -44,5 +44,5 @@ public class Category extends TimeStamped {
 
     @OneToMany(mappedBy = "category")
     @JsonIgnore
-    private Set<CategoryProduct> categories;
+    private Set<CategoryProduct> products;
 }

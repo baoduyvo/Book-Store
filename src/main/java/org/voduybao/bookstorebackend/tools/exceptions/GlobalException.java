@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.tools.exceptions;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
 @ControllerAdvice
+@Hidden
 @Slf4j
 public class GlobalException {
     @ExceptionHandler(value = ResponseException.class)

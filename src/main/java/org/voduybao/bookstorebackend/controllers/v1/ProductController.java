@@ -22,8 +22,11 @@ public class ProductController {
     private CategoryService categoryService;
 
     @AdminRequired
-    @PostMapping("")
-    public Result create(@Validated @RequestBody CategoryDto.CreatorRequest request) {
+    @PostMapping("{type}")
+    public Result create(
+            @PathVariable String type,
+            @Validated @RequestBody CategoryDto.CreatorRequest request
+    ) {
         categoryService.create(request);
         return Result.success();
     }
