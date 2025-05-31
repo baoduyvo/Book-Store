@@ -61,10 +61,12 @@ public class MediaGallery extends TimeStamped {
     @OneToMany(mappedBy = "media")
     private Set<ProductMedia> productMedia;
 
+    @OneToMany(mappedBy = "media")
+    private Set<ReviewMedia> reviewMedia;
+
     @OneToMany(mappedBy = "image")
     private Set<Book> books;
 
     @OneToMany(mappedBy = "image")
     private Set<Publisher> publishers;
-
 }

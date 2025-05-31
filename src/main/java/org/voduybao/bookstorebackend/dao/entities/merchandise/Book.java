@@ -5,9 +5,12 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 import org.voduybao.bookstorebackend.dao.entities.common.embedded.DimensionAndWeight;
+import org.voduybao.bookstorebackend.dao.entities.feedback.BookArea;
 import org.voduybao.bookstorebackend.dao.entities.media.MediaGallery;
+import org.voduybao.bookstorebackend.dao.entities.user.ReadingHistory;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -62,4 +65,20 @@ public class Book extends TimeStamped {
     @JoinColumn(name = "publisher_id", nullable = false)
     @JsonIgnore
     private Publisher publisher;
+
+    @OneToMany(mappedBy = "book")
+    @JsonIgnore
+    private Set<BookAuthor> authors;
+
+    @OneToMany(mappedBy = "book")
+    @JsonIgnore
+    private Set<Quote> quotes;
+
+    @OneToMany(mappedBy = "book")
+    @JsonIgnore
+    private Set<ReadingHistory> readingHistories;
+
+    @OneToOne(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private BookArea bookArea;
 }

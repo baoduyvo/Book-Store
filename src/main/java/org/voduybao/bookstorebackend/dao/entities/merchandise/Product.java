@@ -3,8 +3,11 @@ package org.voduybao.bookstorebackend.dao.entities.merchandise;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.feedback.Rating;
 import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
 import org.voduybao.bookstorebackend.dao.entities.media.ProductMedia;
+import org.voduybao.bookstorebackend.dao.entities.order.CartItem;
+import org.voduybao.bookstorebackend.dao.entities.order.OrderItem;
 
 import java.util.Set;
 
@@ -55,4 +58,16 @@ public class Product extends TimeStamped {
     @OneToMany(mappedBy = "product")
     @JsonIgnore
     private Set<Variation> variations;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<OrderItem> orderOrderItems;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<CartItem> cartItems;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private Set<Rating> ratings;
 }

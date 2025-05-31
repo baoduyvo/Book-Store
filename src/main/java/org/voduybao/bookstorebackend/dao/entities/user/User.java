@@ -3,9 +3,17 @@ package org.voduybao.bookstorebackend.dao.entities.user;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.feedback.Activation;
+import org.voduybao.bookstorebackend.dao.entities.feedback.Rating;
 import org.voduybao.bookstorebackend.dao.entities.auth.Role;
 import org.voduybao.bookstorebackend.dao.entities.auth.Token;
 import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.bookstorebackend.dao.entities.feedback.Notification;
+import org.voduybao.bookstorebackend.dao.entities.feedback.ReviewerArea;
+import org.voduybao.bookstorebackend.dao.entities.order.Cart;
+import org.voduybao.bookstorebackend.dao.entities.order.Order;
+import org.voduybao.bookstorebackend.dao.entities.transaction.Invoice;
+import org.voduybao.bookstorebackend.dao.entities.transaction.Transaction;
 import org.voduybao.bookstorebackend.tools.contants.e.AuthProviderEnum;
 
 import java.util.HashSet;
@@ -69,4 +77,44 @@ public class User extends TimeStamped {
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @JsonIgnore
     private UserProfile profile;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<ReadingHistory> readingHistories;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<ListeningHistory> listeningHistories;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Order> orders;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Cart> carts;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Notification> notifications;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Rating> ratings;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private ReviewerArea reviewerArea;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Activation> activations;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Invoice> invoices;
+
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private Set<Transaction> transactions;
 }
