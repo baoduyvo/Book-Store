@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -9,7 +10,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.voduybao.bookstorebackend.dtos.AuthenDto;
 import org.voduybao.bookstorebackend.services.auth.AuthenService;
-import org.voduybao.bookstorebackend.tools.contants.a.AdminRequired;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
 @Slf4j
@@ -17,6 +17,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/authentication")
 @RequiredArgsConstructor
+@Tag(name = "Authen Controller", description = "API quản lý các xác thực của người dùng")
 public class AuthController {
     @Setter(onMethod_ = @Autowired)
     private AuthenService authenService;

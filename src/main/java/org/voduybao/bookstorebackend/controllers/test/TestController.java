@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.controllers.v2;
+package org.voduybao.bookstorebackend.controllers.test;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -25,7 +25,7 @@ import java.util.Map;
 @Slf4j
 @Validated
 @RestController
-@RequestMapping("/api/test")
+@RequestMapping("/v1/test")
 @RequiredArgsConstructor
 @Tag(name = "Test Controller", description = "API quản lý các bản ghi học vấn của người dùng")
 @ApiResponses(value = {

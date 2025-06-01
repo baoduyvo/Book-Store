@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/hobbies")
 @RequiredArgsConstructor
+@Tag(name = "Hobby Controller", description = "API quản lý các bản ghi sở thích của người dùng")
 public class HobbyController {
     @Setter(onMethod_ = @Autowired)
     private HobbyService hobbyService;

@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +18,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/jobs")
 @RequiredArgsConstructor
+@Tag(name = "Job Controller", description = "API quản lý các bản ghi công việc của người dùng")
 public class JobController {
     @Setter(onMethod_ = @Autowired)
     private JobService jobService;
