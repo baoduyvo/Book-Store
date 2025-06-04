@@ -16,7 +16,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/otp")
 @RequiredArgsConstructor
-@Tag(name = "Otp Controller", description = "API quản lý các bản ghi mã otp")
+@Tag(name = "08 - Otp Controller", description = "API quản lý các bản ghi mã otp")
 public class OtpController {
     @Setter(onMethod_ = @Autowired)
     private OtpService otpService;

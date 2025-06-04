@@ -9,7 +9,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.voduybao.bookstorebackend.dtos.CategoryDto;
 import org.voduybao.bookstorebackend.services.merchandise.CategoryService;
-import org.voduybao.bookstorebackend.services.merchandise.CategorySyncService;
+import org.voduybao.bookstorebackend.services.merchandise.sync.CategorySyncService;
 import org.voduybao.bookstorebackend.tools.contants.a.AdminRequired;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
@@ -18,7 +18,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/categories")
 @RequiredArgsConstructor
-@Tag(name = "Categories Controller", description = "API quản lý các thể loại")
+@Tag(name = "07 - Category Controller", description = "API quản lý các thể loại")
 public class CategoryController {
 
     @Setter(onMethod_ = @Autowired)

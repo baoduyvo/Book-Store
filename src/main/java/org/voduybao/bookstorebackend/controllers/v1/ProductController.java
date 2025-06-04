@@ -17,7 +17,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/products")
 @RequiredArgsConstructor
-@Tag(name = "Product Controller", description = "API quản lý các bản ghi sản phẩm")
+@Tag(name = "09 - Product Controller", description = "API quản lý các bản ghi sản phẩm về sách")
 public class ProductController {
 
     @Setter(onMethod_ = @Autowired)

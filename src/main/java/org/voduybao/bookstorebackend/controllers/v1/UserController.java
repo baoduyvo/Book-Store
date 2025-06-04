@@ -20,7 +20,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/users")
 @RequiredArgsConstructor
-@Tag(name = "Education Controller", description = "API quản lý các bản ghi người dùng")
+@Tag(name = "02 - User Controller", description = "API quản lý các bản ghi người dùng")
 public class UserController {
 
     @Setter(onMethod_ = @Autowired)

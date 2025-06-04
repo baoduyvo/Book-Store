@@ -17,7 +17,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/profile")
 @RequiredArgsConstructor
-@Tag(name = "Education Controller", description = "API quản lý các bản ghi thông tin của người dùng")
+@Tag(name = "03 - Profile User Controller", description = "API quản lý các bản ghi thông tin của người dùng")
 public class UserProfileController {
     @Setter(onMethod_ = @Autowired)
     private UserProfileService userProfileService;

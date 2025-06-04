@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.voduybao.bookstorebackend.services.merchandise.CategorySyncService;
+import org.voduybao.bookstorebackend.services.merchandise.sync.CategorySyncService;
 import org.voduybao.bookstorebackend.tools.response.http.Result;
 
 import java.util.HashMap;

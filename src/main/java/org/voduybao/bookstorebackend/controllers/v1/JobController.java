@@ -18,7 +18,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/jobs")
 @RequiredArgsConstructor
-@Tag(name = "Job Controller", description = "API quản lý các bản ghi công việc của người dùng")
+@Tag(name = "06 - Job Controller", description = "API quản lý các bản ghi công việc của người dùng")
 public class JobController {
     @Setter(onMethod_ = @Autowired)
     private JobService jobService;

@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.services.merchandise.Impl;
+package org.voduybao.bookstorebackend.services.merchandise.sync;
 
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +13,6 @@ import org.voduybao.bookstorebackend.dao.repositories.merchandise.CategoryReposi
 import org.voduybao.bookstorebackend.dao.repositories.searchdocument.CategoryDocRepository;
 import org.voduybao.bookstorebackend.dao.entities.searchdocument.CategoryDocument;
 import org.voduybao.bookstorebackend.mapper.CategoryMapper;
-import org.voduybao.bookstorebackend.services.merchandise.CategorySyncService;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 import org.voduybao.bookstorebackend.tools.response.panigation.PaginationResult;

@@ -17,7 +17,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/authentication")
 @RequiredArgsConstructor
-@Tag(name = "Authen Controller", description = "API quản lý các xác thực của người dùng")
+@Tag(name = "01 - Authen Controller", description = "API quản lý các xác thực của người dùng")
 public class AuthController {
     @Setter(onMethod_ = @Autowired)
     private AuthenService authenService;

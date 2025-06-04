@@ -16,7 +16,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/hobbies")
 @RequiredArgsConstructor
-@Tag(name = "Hobby Controller", description = "API quản lý các bản ghi sở thích của người dùng")
+@Tag(name = "05 - Hobby Controller", description = "API quản lý các bản ghi sở thích của người dùng")
 public class HobbyController {
     @Setter(onMethod_ = @Autowired)
     private HobbyService hobbyService;
