@@ -8,7 +8,7 @@ import org.voduybao.bookstorebackend.dao.entities.merchandise.Category;
 import org.voduybao.bookstorebackend.dao.repositories.merchandise.CategoryRepository;
 import org.voduybao.bookstorebackend.dtos.CategoryDto;
 import org.voduybao.bookstorebackend.services.merchandise.CategoryService;
-import org.voduybao.bookstorebackend.services.merchandise.CategorySyncService;
+import org.voduybao.bookstorebackend.services.merchandise.sync.CategorySyncService;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseErrors;
 import org.voduybao.bookstorebackend.tools.exceptions.error.ResponseException;
 

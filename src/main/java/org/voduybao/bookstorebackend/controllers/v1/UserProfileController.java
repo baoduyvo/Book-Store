@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +17,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/profile")
 @RequiredArgsConstructor
+@Tag(name = "03 - Profile User Controller", description = "API quản lý các bản ghi thông tin của người dùng")
 public class UserProfileController {
     @Setter(onMethod_ = @Autowired)
     private UserProfileService userProfileService;

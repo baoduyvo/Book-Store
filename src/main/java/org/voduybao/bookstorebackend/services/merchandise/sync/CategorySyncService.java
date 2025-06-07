@@ -1,4 +1,4 @@
-package org.voduybao.bookstorebackend.services.merchandise;
+package org.voduybao.bookstorebackend.services.merchandise.sync;
 
 import org.voduybao.bookstorebackend.dao.entities.merchandise.Category;
 import org.voduybao.bookstorebackend.tools.response.panigation.PaginationResult;

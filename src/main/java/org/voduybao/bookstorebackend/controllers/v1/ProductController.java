@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +17,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @Validated
 @RequestMapping("/v1/products")
 @RequiredArgsConstructor
+@Tag(name = "09 - Product Controller", description = "API quản lý các bản ghi sản phẩm về sách")
 public class ProductController {
 
     @Setter(onMethod_ = @Autowired)

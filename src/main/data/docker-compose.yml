@@ -1,0 +1,34 @@
+name: bookstore-network
+version: '3.8'
+
+services:
+#  mysql:
+#    extends:
+#      file: ./mysql.yml
+#      service: mysql
+  elasticsearch:
+    extends:
+      file: ./elasticsearch.yml
+      service: elasticsearch
+#  springboot-app:
+#    extends:
+#      file: ./springboot-app.yml
+#      service: springboot-app
+  minio:
+    extends:
+      file: ./minio.yml
+      service: minio
+  redis:
+    extends:
+      file: ./redis.yml
+      service: redis
+  zookeeper:
+    extends:
+      file: ./kafka.yml
+      service: zookeeper
+  kafka:
+    extends:
+      file: ./kafka.yml
+      service: kafka
+    depends_on:
+      - zookeeper
