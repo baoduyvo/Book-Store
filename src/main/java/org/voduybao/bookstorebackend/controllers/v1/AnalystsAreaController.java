@@ -17,8 +17,8 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RestController
 @Validated
 @RequestMapping("/v1/product/analysis-areas")
-@RequiredArgsConstructor
 @Tag(name = "16 - Product area Controller", description = "API quản lý các sản phẩm có khu vực phân tích")
+@RequiredArgsConstructor
 public class AnalystsAreaController {
 
     @Setter(onMethod_ = @Autowired)
