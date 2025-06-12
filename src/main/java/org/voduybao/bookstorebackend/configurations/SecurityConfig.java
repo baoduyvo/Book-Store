@@ -42,9 +42,6 @@ public class SecurityConfig {
             "/swagger-ui.html",
             "/swagger-resources/**",
 
-            "/v1/test/1",
-            "/v1/test/2",
-
             "/v1/categories",
     };
 

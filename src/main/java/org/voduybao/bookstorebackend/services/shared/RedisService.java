@@ -1,20 +1,13 @@
 package org.voduybao.bookstorebackend.services.shared;
 
-import org.voduybao.bookstorebackend.dao.entities.user.Job;
-import org.voduybao.bookstorebackend.dtos.JobDto;
-
-import java.util.List;
+import java.util.Map;
 
 public interface RedisService {
 
-    void create(JobDto.Request request);
+    void addToHash(String key, String field, Object value);
 
-    void update(Integer id, JobDto.Request request);
+    boolean hasKey(String key);
 
-    List<Job> list();
-
-    void delete(Integer id);
-
-    Job getById(Integer id);
+    Map<String, Object> getAllFromHash(String key);
 
 }

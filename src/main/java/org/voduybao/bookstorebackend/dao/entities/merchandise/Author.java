@@ -14,7 +14,17 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "authors")
+@Table(name = "authors",
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        name = "name_unique",
+                        columnNames = {"name"}
+                )},
+        indexes = {
+                @Index(name = "idx_author_name", columnList = "name"),
+                @Index(name = "idx_author_archived", columnList = "archived")
+        }
+)
 public class Author extends TimeStamped {
 
     @Id
@@ -32,7 +42,7 @@ public class Author extends TimeStamped {
     private Boolean archived = false;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "media_gallery_id", nullable = false)
+    @JoinColumn(name = "media_gallery_id")
     @JsonIgnore
     private MediaGallery image;
 

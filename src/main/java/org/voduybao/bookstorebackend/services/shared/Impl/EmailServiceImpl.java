@@ -16,6 +16,7 @@ public class EmailServiceImpl implements EmailService {
 
     @Setter(onMethod_ = @Autowired)
     private JavaMailSender mailSender;
+
     @Override
     public void sendVerifyOtp(String email, String otp) {
         // Tạo nội dung email HTML
