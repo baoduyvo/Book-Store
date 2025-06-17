@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -19,6 +20,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequestMapping("/v1/categories")
 @RequiredArgsConstructor
 @Tag(name = "07 - Category Controller", description = "API quản lý các thể loại")
+@Hidden
 public class CategoryController {
 
     @Setter(onMethod_ = @Autowired)

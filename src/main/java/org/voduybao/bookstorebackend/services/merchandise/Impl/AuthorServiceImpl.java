@@ -33,12 +33,11 @@ public class AuthorServiceImpl implements AuthorService {
         Author author = Author.builder()
                 .name(request.getName())
                 .bio(request.getBio())
-                .archived(false)
                 .build();
         authorRepository.save(author);
 
         try {
-//            var reponse = minioService.uploadFile(image);
+            var reponse = minioService.uploadFile(image);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

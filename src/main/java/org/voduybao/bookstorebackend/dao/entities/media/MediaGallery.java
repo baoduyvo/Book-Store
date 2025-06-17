@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.voduybao.bookstorebackend.dao.entities.common.embedded.FileEntry;
 import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.bookstorebackend.dao.entities.merchandise.Author;
 import org.voduybao.bookstorebackend.dao.entities.merchandise.Book;
 import org.voduybao.bookstorebackend.dao.entities.merchandise.Publisher;
 import org.voduybao.bookstorebackend.tools.contants.e.FileTypeEnum;
@@ -50,9 +51,11 @@ public class MediaGallery extends TimeStamped {
     private String mimeType;
 
     @Column(name = "is_active")
+    @Builder.Default
     private Boolean isActive = true;
 
     @Column(name = "is_deleted")
+    @Builder.Default
     private Boolean isDeleted = false;
 
     @OneToMany(mappedBy = "media")
@@ -66,6 +69,9 @@ public class MediaGallery extends TimeStamped {
 
     @OneToMany(mappedBy = "image")
     private Set<Book> books;
+
+    @OneToMany(mappedBy = "image")
+    private Set<Author> authors;
 
     @OneToMany(mappedBy = "image")
     private Set<Publisher> publishers;

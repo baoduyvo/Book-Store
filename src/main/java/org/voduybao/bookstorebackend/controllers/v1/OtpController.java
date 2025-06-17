@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -17,6 +18,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequestMapping("/v1/otp")
 @RequiredArgsConstructor
 @Tag(name = "08 - Otp Controller", description = "API quản lý các bản ghi mã otp")
+@Hidden
 public class OtpController {
     @Setter(onMethod_ = @Autowired)
     private OtpService otpService;

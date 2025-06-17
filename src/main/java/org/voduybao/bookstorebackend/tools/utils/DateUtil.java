@@ -13,7 +13,7 @@ import java.util.Objects;
 
 import static org.voduybao.bookstorebackend.tools.utils.StrUtil.FORMAT_DATE_AND_TIME;
 
-public class DateUtils {
+public class DateUtil {
 
     public static Instant parsePublicationDate(String date, String format) {
         if (Objects.isNull(date))

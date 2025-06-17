@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,7 @@ public class AuthController {
     private AuthenService authenService;
 
     @PostMapping("/register")
+    @Hidden
     public Result register(@RequestBody @Validated AuthenDto.RegisterRequest request) {
         authenService.reigster(request);
         return Result.success();
@@ -36,6 +38,7 @@ public class AuthController {
     }
 
     @PostMapping("/refresh-token")
+    @Hidden
     public Result refreshToken(@CookieValue(name = "refreshToken") String refreshToken,
                                HttpServletResponse response) {
         var reponse = authenService.refresh(refreshToken, response);
@@ -43,6 +46,7 @@ public class AuthController {
     }
 
     @PostMapping("/sign-out")
+    @Hidden
     public Result signOut(@RequestBody @Validated AuthenDto.TokenRequest request,
                           HttpServletResponse response) {
         authenService.logout(request, response);
@@ -50,18 +54,21 @@ public class AuthController {
     }
 
     @PostMapping("/introspect")
+    @Hidden
     public Result introspect(@RequestBody @Validated AuthenDto.TokenRequest request) {
         var reponse = authenService.introspect(request);
         return Result.content(reponse);
     }
 
     @GetMapping("/socail-login")
+    @Hidden
     public Result socailAuth(@RequestParam("login_type") String loginType) {
         var reponse = authenService.socailAuthType(loginType);
         return Result.content(reponse);
     }
 
     @GetMapping("/callback")
+    @Hidden
     public Result callback(@RequestParam("code") String code,
                            @RequestParam("state") String loginType,
                            HttpServletResponse response) {

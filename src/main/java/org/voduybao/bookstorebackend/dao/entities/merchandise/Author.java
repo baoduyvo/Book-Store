@@ -39,6 +39,7 @@ public class Author extends TimeStamped {
     private String bio;
 
     @Column(name = "archived")
+    @Builder.Default
     private Boolean archived = false;
 
     @ManyToOne(fetch = FetchType.LAZY)

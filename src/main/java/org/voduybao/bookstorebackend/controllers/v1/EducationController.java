@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequiredArgsConstructor
 @RequestMapping("/v1/educations")
 @Tag(name = "04 - Education Controller", description = "API quản lý các bản ghi học vấn của người dùng")
+@Hidden
 public class EducationController {
     @Setter(onMethod_ = @Autowired)
     private EducationService educationService;

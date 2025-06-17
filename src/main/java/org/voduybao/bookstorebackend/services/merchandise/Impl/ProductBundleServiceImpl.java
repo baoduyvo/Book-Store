@@ -17,7 +17,7 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Objects;
 
-import static org.voduybao.bookstorebackend.tools.utils.DateUtils.parsePublicationDate;
+import static org.voduybao.bookstorebackend.tools.utils.DateUtil.parsePublicationDate;
 import static org.voduybao.bookstorebackend.tools.utils.StrUtil.FORMAT_DATE_AND_TIME;
 
 @Component

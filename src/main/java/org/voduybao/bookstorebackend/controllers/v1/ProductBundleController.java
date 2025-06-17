@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequestMapping("/v1/product/bundles")
 @RequiredArgsConstructor
 @Tag(name = "10 - Product Bundle Controller", description = "API quản lý các bản ghi gói sản phẩm")
+@Hidden
 public class ProductBundleController {
 
     @Setter(onMethod_ = @Autowired)

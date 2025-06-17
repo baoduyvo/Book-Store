@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.dtos;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
@@ -37,9 +38,11 @@ public class AuthenDto {
     @NoArgsConstructor
     public static class LoginRequest {
         @NotNull(message = "Vui Lòng Nhập Số Điện Thoại Hoặc Email")
+        @Schema(example = "van.a.nguyen@example.com", defaultValue = "test@example.com")
         private String phoneOrEmail;
 
         @NotNull(message = "Vui Lòng Nhập Password")
+        @Schema(example = "Password123", defaultValue = "Password123")
         private String password;
 
         public boolean isPhone() {

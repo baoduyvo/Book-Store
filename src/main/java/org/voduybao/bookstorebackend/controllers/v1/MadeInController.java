@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequestMapping("/v1/product/mades-in")
 @RequiredArgsConstructor
 @Tag(name = "11 - Product Made In Controller", description = "API quản lý các sản phẩm được sản xuất tại")
+@Hidden
 public class MadeInController {
 
     @Setter(onMethod_ = @Autowired)

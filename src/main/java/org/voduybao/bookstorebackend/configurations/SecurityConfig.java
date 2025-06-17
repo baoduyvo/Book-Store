@@ -31,7 +31,9 @@ public class SecurityConfig {
             "v1/users/confirm-password",
             "v1/users/forgot-password",
             "v1/otp/send",
-            "v1/otp/verify"
+            "v1/otp/verify",
+
+            "v1/files/upload"
     };
     private static final String[] getWhiteList = {
             "v1/authentication/socail-login",

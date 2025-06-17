@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequestMapping("/v1/product/authors")
 @RequiredArgsConstructor
 @Tag(name = "13 - Product Author Controller", description = "API quản lý các sản phẩm có tác giả")
+@Hidden
 public class AuthorController {
 
     @Setter(onMethod_ = @Autowired)
@@ -28,9 +30,9 @@ public class AuthorController {
 
     @AdminRequired
     @PostMapping(value = "", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    @Operation(summary = "create author example", description = "tạo các bản ghi về tác giả")
+    @Operation(summary = "create author", description = "tạo các bản ghi về tác giả")
     public Result create(
-            @Validated @RequestPart AuthorDto.CreatorRequest request,
+            @Validated @ModelAttribute AuthorDto.CreatorRequest request,
             @RequestParam(value = "image") MultipartFile image
     ) {
         authorService.create(request, image);

@@ -1,5 +1,6 @@
 package org.voduybao.bookstorebackend.controllers.v1;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -21,6 +22,7 @@ import org.voduybao.bookstorebackend.tools.response.http.Result;
 @RequestMapping("/v1/users")
 @RequiredArgsConstructor
 @Tag(name = "02 - User Controller", description = "API quản lý các bản ghi người dùng")
+@Hidden
 public class UserController {
 
     @Setter(onMethod_ = @Autowired)
