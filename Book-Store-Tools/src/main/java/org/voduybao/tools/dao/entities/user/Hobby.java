@@ -1,0 +1,24 @@
+package org.voduybao.tools.dao.entities.user;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
+
+@Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name = "hobbies")
+public class Hobby extends TimeStamped {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "hobby_id")
+    private Integer id;
+
+    @Column(name = "title", length = 255)
+    private String title;
+
+}
