@@ -51,6 +51,7 @@ public class Book extends TimeStamped {
     private String format;
 
     @Column(name = "archived")
+    @Builder.Default
     private Boolean archived = false;
 
     @Embedded

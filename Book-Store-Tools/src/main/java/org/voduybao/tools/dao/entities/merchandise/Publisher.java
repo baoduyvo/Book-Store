@@ -6,7 +6,6 @@ import lombok.*;
 import org.voduybao.tools.dao.entities.common.metadata.TimeStamped;
 import org.voduybao.tools.dao.entities.media.MediaGallery;
 
-
 import java.util.Set;
 
 @Entity

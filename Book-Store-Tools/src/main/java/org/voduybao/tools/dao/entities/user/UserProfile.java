@@ -4,12 +4,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.common.embedded.Address;
-import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-import org.voduybao.bookstorebackend.dao.entities.media.UserMedia;
-import org.voduybao.bookstorebackend.dao.entities.user.Hobby;
-import org.voduybao.bookstorebackend.dao.entities.user.Job;
-import org.voduybao.bookstorebackend.tools.contants.e.GenderEnum;
+import org.voduybao.tools.contants.e.GenderEnum;
+import org.voduybao.tools.dao.entities.common.embedded.Address;
+import org.voduybao.tools.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.tools.dao.entities.media.UserMedia;
 
 import java.time.LocalDate;
 import java.util.Set;

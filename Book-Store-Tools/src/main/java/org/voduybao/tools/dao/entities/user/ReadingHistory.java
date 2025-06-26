@@ -3,8 +3,8 @@ package org.voduybao.tools.dao.entities.user;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-import org.voduybao.bookstorebackend.dao.entities.merchandise.Book;
+import org.voduybao.tools.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.tools.dao.entities.merchandise.Book;
 
 import java.util.Date;
 
@@ -23,6 +23,7 @@ public class ReadingHistory extends TimeStamped {
     private Integer id;
 
     @Column(name = "progress", nullable = false)
+    @Builder.Default
     private Integer progress = 0;
 
     @Column(name = "last_read_at")

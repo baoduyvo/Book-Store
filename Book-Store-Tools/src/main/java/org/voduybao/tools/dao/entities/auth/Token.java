@@ -42,6 +42,7 @@ public class Token {
     private Date expiredAt;
 
     @Column(name = "revoked", nullable = false)
+    @Builder.Default
     private boolean revoked = false;
 
     @PrePersist

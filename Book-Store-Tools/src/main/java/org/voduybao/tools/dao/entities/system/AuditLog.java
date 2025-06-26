@@ -3,8 +3,8 @@ package org.voduybao.tools.dao.entities.system;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-import org.voduybao.bookstorebackend.dao.entities.user.User;
+import org.voduybao.tools.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.tools.dao.entities.user.User;
 
 @Entity
 @Getter

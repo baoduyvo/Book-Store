@@ -2,8 +2,7 @@ package org.voduybao.tools.dao.entities.user;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-
+import org.voduybao.tools.dao.entities.common.metadata.TimeStamped;
 
 @Entity
 @Getter

@@ -3,10 +3,10 @@ package org.voduybao.tools.dao.entities.transaction;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.voduybao.bookstorebackend.dao.entities.common.metadata.TimeStamped;
-import org.voduybao.bookstorebackend.dao.entities.order.Order;
-import org.voduybao.bookstorebackend.dao.entities.user.User;
-import org.voduybao.bookstorebackend.tools.contants.e.StatusEnum;
+import org.voduybao.tools.contants.e.StatusEnum;
+import org.voduybao.tools.dao.entities.common.metadata.TimeStamped;
+import org.voduybao.tools.dao.entities.order.Order;
+import org.voduybao.tools.dao.entities.user.User;
 
 import java.util.Date;
 import java.util.Set;
