@@ -1,0 +1,18 @@
+${AnsiColor.GREEN}         DDDDDDDDDDDDD         UUUUUUU    UUUUUUU  YYYYYY          YYYYYYY BBBBBBBBBBBBBBBBB                 AAAA                 OOOOOOOOO
+${AnsiColor.GREEN}         D::::::::::::DD       U:::::U     U:::::U Y::::Y          Y:::::Y B::::::::::::::::B               A::::A               OO::::::::OO
+${AnsiColor.GREEN}         D:::::::::::::::D     U:::::U     U:::::U Y:::::Y        Y:::::Y  B::::::BBBBBB:::::B             A::::::A             OO::::::::::::OO
+${AnsiColor.GREEN}         DDD:::::DDDDD:::::D   U:::::U     U:::::U  Y:::::Y      Y:::::Y   BB:::::B     B:::::B           A::::::::A          O:::::::OOO:::::::O
+${AnsiColor.GREEN}           D:::::D    D:::::D  U:::::U     U:::::U   Y:::::Y    Y:::::Y    B::::B     B:::::B            A::::::::::A         O::::::O   O::::::O
+${AnsiColor.GREEN}           D:::::D     D:::::D U:::::D     D:::::D     Y:::::Y Y:::::Y     B::::B     B:::::B           A::::A::A::::A        O:::::O     O:::::O
+${AnsiColor.GREEN}           D:::::D     D:::::D U:::::D     D:::::D      Y:::::Y:::::Y      B::::BBBBBB:::::B           A:::A::A::A:A::A       O:::::O     O:::::O
+${AnsiColor.GREEN}           D:::::D     D:::::D U:::::D     D:::::D       Y:::::::::Y       B:::::::::::::BB           A::::A::A::A:A:::A      O:::::O     O:::::O
+${AnsiColor.GREEN}           D:::::D     D:::::D U:::::D     D:::::D        Y:::::::Y        B::::BBBBBB:::::B         A:::A          A:::A     O:::::O     O:::::O
+${AnsiColor.GREEN}           D:::::D     D:::::D U:::::D     D:::::D         Y:::::Y         B::::B     B:::::B       A:::A            A:::A    O:::::O     O:::::O
+${AnsiColor.GREEN}           D:::::D    D:::::D  U::::::U   U::::::U         Y:::::Y         B::::B     B:::::B      A:::A              A:::A   O::::::O   O::::::O
+${AnsiColor.GREEN}         DDD:::::DDDDD:::::D    U:::::::UUU::::::U         Y:::::Y         BB:::::BBBBBB::::::B   A:::A                A:::A  O:::::::OOO:::::::O
+${AnsiColor.GREEN}         D:::::::::::::::DD     UU:::::::::::::UU          Y:::::Y         B:::::::::::::::::B   A:::A                  A:::A  OO:::::::::::::OO
+${AnsiColor.GREEN}         D::::::::::::DDD         UU:::::::::UU            Y:::::Y         B::::::::::::::::B   A:::A                    A:::A  OO:::::::::OO
+${AnsiColor.GREEN}         DDDDDDDDDDDDD              UUUUUUUUU              YYYYYYY         BBBBBBBBBBBBBBBBB   AAAAA                      AAAAA   OOOOOOOOO
+
+
+                 ${AnsiColor.GREEN}:: ${spring.application.name} ::         ${AnsiColor.BRIGHT_CYAN}${spring-boot.formatted-version}
