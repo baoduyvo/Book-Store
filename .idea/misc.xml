@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/Book-Store-Web-Flux/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Book-Store-Tools/pom.xml" />
+        <option value="$PROJECT_DIR$/Book-Store-Spring-Batch/pom.xml" />
+        <option value="$PROJECT_DIR$/Book-Store-Data-JPA/pom.xml" />
       </list>
     </option>
   </component>

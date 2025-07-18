@@ -2,6 +2,9 @@ package org.voduybao.tools.utils;
 
 
 public class FileUtil {
+    public static String createFileName(String fileName, String extension) {
+        return fileName + "." + extension;
+    }
 
     public static String getExtensionName(String fileName) {
         int dotIndex = fileName.lastIndexOf('.');

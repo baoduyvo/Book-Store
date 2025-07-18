@@ -6,13 +6,13 @@ services:
     container_name: mysql
     restart: always
     ports:
-      - "3307:3306"
+      - "3306:3306"
     environment:
-      MYSQL_DATABASE: bookstore
-      MYSQL_ROOT_PASSWORD: root1234
-      MYSQL_USER: root
+      MYSQL_DATABASE: book_store
+      MYSQL_ROOT_PASSWORD: 1234
+      # MYSQL_USER: book_user           # (nếu cần tạo user mới thì dùng dòng này)
+      # MYSQL_PASSWORD: password        # (cần nếu bạn khai báo MYSQL_USER)
     volumes:
       - ./data/conf.d:/etc/mysql/conf.d
       - ./data/logs:/logs
       - /usr/local/var/mysql:/var/lib/mysql
-
