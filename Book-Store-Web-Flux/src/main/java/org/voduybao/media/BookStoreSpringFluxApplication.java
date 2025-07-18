@@ -3,15 +3,13 @@ package org.voduybao.media;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.reactive.config.EnableWebFlux;
 
 @SpringBootApplication
 @EntityScan(basePackages = {
-        "org.voduybao.tools.dao.entities"
+        "org.voduybao.tools.entities"
 })
-@EnableJpaRepositories(basePackages = {
-        "org.voduybao.tools.dao.repository"
-})
+@EnableWebFlux
 public class BookStoreSpringFluxApplication {
 
     public static void main(String[] args) {

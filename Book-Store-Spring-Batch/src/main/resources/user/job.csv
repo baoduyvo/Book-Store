@@ -1,0 +1,304 @@
+id,title
+1,Nhân viên Kinh doanh
+2,Chuyên viên Marketing
+3,Kỹ sư Phần mềm
+4,Quản lý Dự án
+5,Nhân viên Hành chính Nhân sự
+6,Chuyên viên Tài chính
+7,Thiết kế Đồ họa
+8,Chuyên viên Chăm sóc Khách hàng
+9,Nhân viên Kế toán
+10,Lập trình viên Backend
+11,Lập trình viên Frontend
+12,Quản trị Mạng
+13,Chuyên viên SEO
+14,Nhân viên Bán hàng
+15,Nhân viên Giao nhận
+16,Kỹ thuật Viên Bảo trì
+17,Nhân viên Marketing Online
+18,Giám đốc Kinh doanh
+19,Chuyên viên Tuyển dụng
+20,Nhân viên Thu mua
+21,Kỹ sư Cơ khí
+22,Nhân viên Phục vụ Nhà hàng
+23,Chuyên viên Nội dung
+24,Nhân viên Quản lý Kho
+25,Giáo viên Tiếng Anh
+26,Nhân viên Phát triển Sản phẩm
+27,Chuyên viên Phân tích Dữ liệu
+28,Nhân viên Kiểm soát Chất lượng
+29,Nhân viên Hỗ trợ Kỹ thuật
+30,Nhân viên Vận hành Máy móc
+31,Chuyên viên Truyền thông
+32,Nhân viên Quản lý Dự án IT
+33,Nhân viên Lễ tân
+34,Nhân viên Dịch vụ Khách hàng
+35,Giám sát Sản xuất
+36,Nhân viên Thư ký
+37,Chuyên viên Phát triển Kinh doanh
+38,Nhân viên Bảo vệ
+39,Nhân viên Quản lý Bán hàng
+40,Nhân viên Kỹ thuật Phần cứng
+41,Nhân viên Sửa chữa Điện tử
+42,Chuyên viên Đào tạo
+43,Nhân viên Pháp lý
+44,Nhân viên Quản lý Văn phòng
+45,Nhân viên Marketing Sự kiện
+46,Nhân viên Thiết kế Website
+47,Nhân viên Kinh doanh Bất động sản
+48,Nhân viên Phân tích Tài chính
+49,Nhân viên Quản lý Dữ liệu
+50,Nhân viên Kiểm toán
+51,Chuyên viên Hỗ trợ Khách hàng
+52,Nhân viên Phân tích Marketing
+53,Nhân viên Kinh doanh Xuất nhập khẩu
+54,Giám đốc Sản xuất
+55,Nhân viên Logistics
+56,Nhân viên Tư vấn Bảo hiểm
+57,Nhân viên Quản lý Dự án Xây dựng
+58,Nhân viên Quản trị Website
+59,Chuyên viên Phát triển Ứng dụng Di động
+60,Nhân viên Kế hoạch Sản xuất
+61,Chuyên viên Phân tích Hệ thống
+62,Nhân viên Dịch vụ Tài chính
+63,Nhân viên Kỹ thuật Mạng
+64,Nhân viên Phân phối Sản phẩm
+65,Nhân viên Quản lý Sự kiện
+66,Chuyên viên Trợ lý Giám đốc
+67,Nhân viên Quản lý Tài sản
+68,Nhân viên Thiết kế Nội thất
+69,Nhân viên Biên tập Nội dung
+70,Nhân viên Quản lý Chất lượng
+71,Nhân viên Hỗ trợ Kỹ thuật Phần mềm
+72,Chuyên viên Phân tích Thị trường
+73,Nhân viên Kinh doanh Online
+74,Nhân viên Hành chính Văn phòng
+75,Nhân viên Quản lý Khách hàng Doanh nghiệp
+76,Nhân viên Quản lý Thương hiệu
+77,Nhân viên Dịch vụ Hậu cần
+78,Nhân viên Sửa chữa Ô tô
+79,Nhân viên Hỗ trợ Kỹ thuật Phần cứng
+80,Chuyên viên Kiểm thử Phần mềm
+81,Nhân viên Thiết kế Quảng cáo
+82,Nhân viên Phát triển Nội dung Số
+83,Chuyên viên Hành chính Lễ tân
+84,Nhân viên Bảo trì Hệ thống
+85,Nhân viên Quản lý Nhà hàng
+86,Nhân viên Kỹ thuật Điện
+87,Chuyên viên Tư vấn Tuyển dụng
+88,Nhân viên Kinh doanh Dịch vụ
+89,Nhân viên Quản lý Dự án Marketing
+90,Nhân viên Hỗ trợ Vận hành
+91,Nhân viên Phân tích Rủi ro
+92,Nhân viên Tư vấn Tài chính Cá nhân
+93,Nhân viên Quản lý Sản phẩm
+94,Chuyên viên Thiết kế UX/UI
+95,Nhân viên Dịch vụ Khách hàng Online
+96,Nhân viên Hỗ trợ Kỹ thuật Máy tính
+97,Nhân viên Đào tạo Nhân sự
+98,Chuyên viên Phân tích Nghiệp vụ
+99,Nhân viên Giám sát Bảo trì
+100,Nhân viên Hành chính Nhân sự Thực tập
+101,Nhân viên Kinh doanh Trực tuyến
+102,Chuyên viên Phân tích Dữ liệu Lớn
+103,Nhân viên Phát triển Phần mềm
+104,Nhân viên Quản lý Mạng Xã hội
+105,Nhân viên Hỗ trợ Khách hàng Quốc tế
+106,Chuyên viên Tư vấn Pháp lý
+107,Nhân viên Quản lý Tài chính Doanh nghiệp
+108,Nhân viên Kỹ thuật Hệ thống
+109,Nhân viên Quản lý Chuỗi Cung ứng
+110,Nhân viên Trợ lý Kinh doanh
+111,Nhân viên Hành chính Văn phòng
+112,Chuyên viên Dịch vụ Khách hàng
+113,Nhân viên Phát triển Thị trường
+114,Nhân viên Tư vấn Tuyển sinh
+115,Nhân viên Kiểm tra Chất lượng Sản phẩm
+116,Nhân viên Thiết kế Truyền thông
+117,Nhân viên Kinh doanh Bán lẻ
+118,Chuyên viên Quản lý Rủi ro
+119,Nhân viên Lập kế hoạch Sản xuất
+120,Nhân viên Hỗ trợ Phần mềm
+121,Nhân viên Phát triển Kỹ năng Nhân sự
+122,Nhân viên Kế hoạch Kinh doanh
+123,Nhân viên Marketing Nội dung
+124,Nhân viên Chăm sóc Khách hàng VIP
+125,Nhân viên Vận hành Máy móc Công nghiệp
+126,Chuyên viên Tư vấn Quản lý
+127,Nhân viên Quản lý Dự án Xây dựng
+128,Nhân viên Phân tích Tài chính Doanh nghiệp
+129,Nhân viên Bảo trì Hệ thống Điện
+130,Nhân viên Quản lý Dữ liệu Khách hàng
+131,Nhân viên Thống kê Kinh tế
+132,Chuyên viên Quản lý Tài sản Doanh nghiệp
+133,Nhân viên Hỗ trợ Kỹ thuật Điện tử
+134,Nhân viên Thiết kế Sản phẩm
+135,Nhân viên Kiểm toán Nội bộ
+136,Nhân viên Quản lý Vận hành Tòa nhà
+137,Nhân viên Kinh doanh B2B
+138,Nhân viên Dịch vụ Hậu cần Quốc tế
+139,Nhân viên Tư vấn Sức khỏe Nghề nghiệp
+140,Nhân viên Quản lý Dự án Công nghệ
+141,Chuyên viên Phân tích Hành vi Người dùng
+142,Nhân viên Phát triển Kinh doanh Online
+143,Nhân viên Hỗ trợ Quản lý
+144,Nhân viên Kinh doanh Dịch vụ Tài chính
+145,Nhân viên Hành chính Nhân sự Cao cấp
+146,Nhân viên Quản lý Thương hiệu Sản phẩm
+147,Nhân viên Thiết kế Nội thất Văn phòng
+148,Nhân viên Phân tích Rủi ro Tài chính
+149,Nhân viên Giám sát Kỹ thuật
+150,Nhân viên Dịch vụ Khách hàng Ngoại thương
+151,Nhân viên Phát triển Nội dung Website
+152,Chuyên viên Tư vấn Đầu tư
+153,Nhân viên Quản lý Sản xuất Công nghiệp
+154,Nhân viên Kỹ thuật Điện lạnh
+155,Nhân viên Kinh doanh Xuất khẩu
+156,Nhân viên Phân tích Thị trường Tiêu dùng
+157,Nhân viên Hỗ trợ Kỹ thuật Phần mềm
+158,Nhân viên Marketing Đa kênh
+159,Nhân viên Quản lý Dự án CNTT
+160,Chuyên viên Kiểm thử Phần mềm
+161,Nhân viên Dịch vụ Khách hàng Quốc tế
+162,Nhân viên Hành chính Văn phòng
+163,Nhân viên Phát triển Sản phẩm Mới
+164,Nhân viên Kinh doanh Trực tiếp
+165,Nhân viên Bảo trì Máy móc Công nghiệp
+166,Nhân viên Quản lý Kho Vận
+167,Chuyên viên Truyền thông Nội bộ
+168,Nhân viên Thiết kế Đồ họa Quảng cáo
+169,Nhân viên Hỗ trợ Dịch vụ Khách hàng
+170,Nhân viên Quản lý Vận hành Hệ thống
+171,Nhân viên Tư vấn Tuyển dụng Công nghệ
+172,Nhân viên Kỹ thuật Phần cứng Máy tính
+173,Nhân viên Quản lý Tài sản Cố định
+174,Nhân viên Phân tích Nghiệp vụ CNTT
+175,Nhân viên Dịch vụ Vận tải
+176,Nhân viên Kinh doanh Dịch vụ Khách sạn
+177,Nhân viên Quản lý Thương mại Điện tử
+178,Chuyên viên Hỗ trợ Kỹ thuật Mạng
+179,Nhân viên Kế hoạch Tài chính
+180,Nhân viên Phát triển Ứng dụng Web
+181,Nhân viên Quản lý Sự kiện Doanh nghiệp
+182,Nhân viên Kiểm tra Chất lượng Dịch vụ
+183,Nhân viên Tư vấn Pháp lý Doanh nghiệp
+184,Nhân viên Kỹ thuật Điện Công nghiệp
+185,Nhân viên Marketing Nội dung Số
+186,Nhân viên Quản lý Khách hàng VIP
+187,Nhân viên Hỗ trợ Kỹ thuật Thiết bị
+188,Nhân viên Kinh doanh Thương mại
+189,Nhân viên Quản lý Dự án Marketing Số
+190,Chuyên viên Phân tích Dữ liệu Tài chính
+191,Nhân viên Hỗ trợ Vận hành Hệ thống
+192,Nhân viên Kinh doanh Sản phẩm Công nghệ
+193,Nhân viên Hành chính Nhân sự Văn phòng
+194,Nhân viên Quản lý Thương hiệu Trực tuyến
+195,Nhân viên Thiết kế Nội thất Nhà ở
+196,Nhân viên Phân tích Rủi ro Doanh nghiệp
+197,Nhân viên Giám sát Dự án Xây dựng
+198,Nhân viên Dịch vụ Khách hàng Ngoại thương
+199,Nhân viên Quản lý Vận hành Tòa nhà
+200,Chuyên viên Tư vấn Đào tạo Nhân sự
+201,Nhân viên Quản lý Dự án CNTT
+202,Chuyên viên Marketing Số
+203,Nhân viên Phân tích Tài chính Cá nhân
+204,Nhân viên Hỗ trợ Kỹ thuật Phần mềm
+205,Nhân viên Kinh doanh Bất động sản
+206,Nhân viên Quản lý Dữ liệu Khách hàng
+207,Nhân viên Thiết kế Đồ họa Truyền thông
+208,Nhân viên Hành chính Văn phòng
+209,Nhân viên Phát triển Thị trường Quốc tế
+210,Nhân viên Kỹ thuật Bảo trì Máy móc
+211,Chuyên viên Tư vấn Quản lý Dự án
+212,Nhân viên Dịch vụ Hậu cần Logistics
+213,Nhân viên Kiểm soát Chất lượng Sản phẩm
+214,Nhân viên Marketing Nội dung Số
+215,Nhân viên Quản lý Thương hiệu
+216,Nhân viên Hỗ trợ Vận hành Hệ thống
+217,Nhân viên Phát triển Phần mềm Ứng dụng
+218,Nhân viên Quản lý Sản xuất Công nghiệp
+219,Nhân viên Tư vấn Tuyển dụng
+220,Nhân viên Kinh doanh Online
+221,Nhân viên Thiết kế UX/UI
+222,Nhân viên Quản lý Dự án Xây dựng
+223,Nhân viên Hỗ trợ Kỹ thuật Máy tính
+224,Nhân viên Kế hoạch Sản xuất
+225,Nhân viên Phân tích Nghiệp vụ
+226,Nhân viên Dịch vụ Khách hàng
+227,Nhân viên Quản lý Kho Vận
+228,Chuyên viên Phát triển Kinh doanh
+229,Nhân viên Thiết kế Nội thất
+230,Nhân viên Giám sát Bảo trì
+231,Nhân viên Marketing Sự kiện
+232,Nhân viên Kỹ thuật Điện
+233,Nhân viên Hỗ trợ Kỹ thuật Phần cứng
+234,Nhân viên Phân tích Thị trường
+235,Nhân viên Quản lý Dữ liệu
+236,Nhân viên Tư vấn Tài chính
+237,Nhân viên Lập trình Web
+238,Nhân viên Kinh doanh B2B
+239,Nhân viên Hành chính Nhân sự
+240,Nhân viên Phát triển Nội dung
+241,Nhân viên Kiểm thử Phần mềm
+242,Nhân viên Kỹ thuật Mạng
+243,Nhân viên Quản lý Khách hàng
+244,Nhân viên Hỗ trợ Kỹ thuật Phần mềm
+245,Nhân viên Thiết kế Quảng cáo
+246,Nhân viên Phân phối Sản phẩm
+247,Nhân viên Vận hành Máy móc
+248,Nhân viên Tư vấn Đầu tư
+249,Nhân viên Quản lý Dự án Marketing
+250,Nhân viên Hỗ trợ Quản lý
+251,Nhân viên Phân tích Rủi ro Tài chính
+252,Nhân viên Quản lý Thương mại Điện tử
+253,Nhân viên Kinh doanh Dịch vụ Tài chính
+254,Nhân viên Thiết kế Nội thất Văn phòng
+255,Nhân viên Hỗ trợ Kỹ thuật Điện tử
+256,Nhân viên Quản lý Vận hành Tòa nhà
+257,Chuyên viên Tư vấn Đào tạo Nhân sự
+258,Nhân viên Phát triển Ứng dụng Di động
+259,Nhân viên Kỹ thuật Điện Công nghiệp
+260,Nhân viên Quản lý Kho Hàng
+261,Nhân viên Marketing Sự kiện
+262,Nhân viên Kinh doanh Trực tuyến
+263,Nhân viên Hỗ trợ Kỹ thuật Máy tính
+264,Nhân viên Quản lý Dữ liệu Khách hàng
+265,Nhân viên Thiết kế Đồ họa Quảng cáo
+266,Nhân viên Tư vấn Tuyển dụng
+267,Nhân viên Phát triển Thị trường Quốc tế
+268,Nhân viên Quản lý Sản xuất Công nghiệp
+269,Nhân viên Kiểm tra Chất lượng Sản phẩm
+270,Nhân viên Hành chính Văn phòng
+271,Nhân viên Dịch vụ Khách hàng Quốc tế
+272,Nhân viên Phân tích Nghiệp vụ CNTT
+273,Nhân viên Kỹ thuật Bảo trì Máy móc
+274,Nhân viên Quản lý Thương hiệu
+275,Nhân viên Marketing Nội dung Số
+276,Nhân viên Hỗ trợ Vận hành Hệ thống
+277,Nhân viên Quản lý Dự án Xây dựng
+278,Nhân viên Tư vấn Pháp lý Doanh nghiệp
+279,Nhân viên Kỹ thuật Phần cứng Máy tính
+280,Nhân viên Kinh doanh Bất động sản
+281,Nhân viên Quản lý Dữ liệu
+282,Nhân viên Thiết kế UX/UI
+283,Nhân viên Phân tích Thị trường Tiêu dùng
+284,Nhân viên Hỗ trợ Kỹ thuật Phần mềm
+285,Nhân viên Phát triển Sản phẩm Mới
+286,Nhân viên Quản lý Kho Vận
+287,Nhân viên Tư vấn Tuyển sinh
+288,Nhân viên Kinh doanh Trực tiếp
+289,Nhân viên Bảo trì Hệ thống Điện
+290,Nhân viên Quản lý Sự kiện Doanh nghiệp
+291,Nhân viên Phân phối Sản phẩm
+292,Nhân viên Kế hoạch Tài chính
+293,Nhân viên Giám sát Dự án Xây dựng
+294,Nhân viên Hỗ trợ Dịch vụ Khách hàng
+295,Nhân viên Kỹ thuật Điện lạnh
+296,Nhân viên Quản lý Dự án CNTT
+297,Nhân viên Marketing Đa kênh
+298,Nhân viên Phát triển Kỹ năng Nhân sự
+299,Nhân viên Quản lý Nhà hàng
+300,Nhân viên Kế hoạch Sản xuất
+
+
+

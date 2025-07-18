@@ -1,0 +1,604 @@
+10001,57,645,30649,Xã Kiến Thành,xa-kien-thanh,30649
+10002,57,645,30652,Xã Mỹ Hiệp,xa-my-hiep,30652
+10003,57,645,30655,Xã Mỹ An,xa-my-an,30655
+10004,57,645,30658,Xã Nhơn Mỹ,xa-nhon-my,30658
+10005,57,645,30661,Xã Long Giang,xa-long-giang,30661
+10006,57,645,30664,Xã Long Kiến,xa-long-kien,30664
+10007,57,645,30667,Xã Bình Phước Xuân,xa-binh-phuoc-xuan,30667
+10008,57,645,30670,Xã An Thạnh Trung,xa-an-thanh-trung,30670
+10009,57,645,30673,Xã Hội An,xa-hoi-an,30673
+10010,57,645,30676,Xã Hòa Bình,xa-hoa-binh,30676
+10011,57,645,30679,Xã Hòa An,xa-hoa-an,30679
+10012,57,646,30682,Thị trấn Núi Sập,thi-tran-nui-sap,30682
+10013,57,646,30685,Thị trấn Phú Hoà,thi-tran-phu-hoa,30685
+10014,57,646,30688,Thị Trấn Óc Eo,thi-tran-oc-eo,30688
+10015,57,646,30691,Xã Tây Phú,xa-tay-phu,30691
+10016,57,646,30692,Xã An Bình,xa-an-binh,30692
+10017,57,646,30694,Xã Vĩnh Phú,xa-vinh-phu,30694
+10018,57,646,30697,Xã Vĩnh Trạch,xa-vinh-trach,30697
+10019,57,646,30700,Xã Phú Thuận,xa-phu-thuan,30700
+10020,57,646,30703,Xã Vĩnh Chánh,xa-vinh-chanh,30703
+10021,57,646,30706,Xã Định Mỹ,xa-dinh-my,30706
+10022,57,646,30709,Xã Định Thành,xa-dinh-thanh,30709
+10023,57,646,30712,Xã Mỹ Phú Đông,xa-my-phu-dong,30712
+10024,57,646,30715,Xã Vọng Đông,xa-vong-dong,30715
+10025,57,646,30718,Xã Vĩnh Khánh,xa-vinh-khanh,30718
+10026,57,646,30721,Xã Thoại Giang,xa-thoai-giang,30721
+10027,57,646,30724,Xã Bình Thành,xa-binh-thanh,30724
+10028,57,646,30727,Xã Vọng Thê,xa-vong-the,30727
+10029,58,647,30730,Phường Vĩnh Thanh Vân,phuong-vinh-thanh-van,30730
+10030,58,647,30733,Phường Vĩnh Thanh,phuong-vinh-thanh,30733
+10031,58,647,30736,Phường Vĩnh Quang,phuong-vinh-quang,30736
+10032,58,647,30739,Phường Vĩnh Hiệp,phuong-vinh-hiep,30739
+10033,58,647,30742,Phường Vĩnh Bảo,phuong-vinh-bao,30742
+10034,58,647,30745,Phường Vĩnh Lạc,phuong-vinh-lac,30745
+10035,58,647,30748,Phường An Hòa,phuong-an-hoa,30748
+10036,58,647,30751,Phường An Bình,phuong-an-binh,30751
+10037,58,647,30754,Phường Rạch Sỏi,phuong-rach-soi,30754
+10038,58,647,30757,Phường Vĩnh Lợi,phuong-vinh-loi,30757
+10039,58,647,30760,Phường Vĩnh Thông,phuong-vinh-thong,30760
+10040,58,647,30763,Xã Phi Thông,xa-phi-thong,30763
+10041,58,648,30766,Phường Tô Châu,phuong-to-chau,30766
+10042,58,648,30769,Phường Đông Hồ,phuong-dong-ho,30769
+10043,58,648,30772,Phường Bình San,phuong-binh-san,30772
+10044,58,648,30775,Phường Pháo Đài,phuong-phao-dai,30775
+10045,58,648,30778,Phường Mỹ Đức,phuong-my-duc,30778
+10046,58,648,30781,Xã Tiên Hải,xa-tien-hai,30781
+10047,58,648,30784,Xã Thuận Yên,xa-thuan-yen,30784
+10048,58,649,30787,Thị trấn Kiên Lương,thi-tran-kien-luong,30787
+10049,58,649,30790,Xã Kiên Bình,xa-kien-binh,30790
+10050,58,649,30802,Xã Hòa Điền,xa-hoa-dien,30802
+10051,58,649,30805,Xã Dương Hòa,xa-duong-hoa,30805
+10052,58,649,30808,Xã Bình An,xa-binh-an,30808
+10053,58,649,30809,Xã Bình Trị,xa-binh-tri,30809
+10054,58,649,30811,Xã Sơn Hải,xa-son-hai,30811
+10055,58,649,30814,Xã Hòn Nghệ,xa-hon-nghe,30814
+10056,58,650,30817,Thị trấn Hòn Đất,thi-tran-hon-dat,30817
+10057,58,650,30820,Thị trấn Sóc Sơn,thi-tran-soc-son,30820
+10058,58,650,30823,Xã Bình Sơn,xa-binh-son,30823
+10059,58,650,30826,Xã Bình Giang,xa-binh-giang,30826
+10060,58,650,30828,Xã Mỹ Thái,xa-my-thai,30828
+10061,58,650,30829,Xã Nam Thái Sơn,xa-nam-thai-son,30829
+10062,58,650,30832,Xã Mỹ Hiệp Sơn,xa-my-hiep-son,30832
+10063,58,650,30835,Xã Sơn Kiên,xa-son-kien,30835
+10064,58,650,30836,Xã Sơn Bình,xa-son-binh,30836
+10065,58,650,30838,Xã Mỹ Thuận,xa-my-thuan,30838
+10066,58,650,30840,Xã Lình Huỳnh,xa-linh-huynh,30840
+10067,58,650,30841,Xã Thổ Sơn,xa-tho-son,30841
+10068,58,650,30844,Xã Mỹ Lâm,xa-my-lam,30844
+10069,58,650,30847,Xã Mỹ Phước,xa-my-phuoc,30847
+10070,58,651,30850,Thị trấn Tân Hiệp,thi-tran-tan-hiep,30850
+10071,58,651,30853,Xã Tân Hội,xa-tan-hoi,30853
+10072,58,651,30856,Xã Tân Thành,xa-tan-thanh,30856
+10073,58,651,30859,Xã Tân Hiệp B,xa-tan-hiep-b,30859
+10074,58,651,30860,Xã Tân Hoà,xa-tan-hoa,30860
+10075,58,651,30862,Xã Thạnh Đông B,xa-thanh-dong-b,30862
+10076,58,651,30865,Xã Thạnh Đông,xa-thanh-dong,30865
+10077,58,651,30868,Xã Tân Hiệp A,xa-tan-hiep-a,30868
+10078,58,651,30871,Xã Tân An,xa-tan-an,30871
+10079,58,651,30874,Xã Thạnh Đông A,xa-thanh-dong-a,30874
+10080,58,651,30877,Xã Thạnh Trị,xa-thanh-tri,30877
+10081,58,652,30880,Thị trấn Minh Lương,thi-tran-minh-luong,30880
+10082,58,652,30883,Xã Mong Thọ A,xa-mong-tho-a,30883
+10083,58,652,30886,Xã Mong Thọ B,xa-mong-tho-b,30886
+10084,58,652,30887,Xã Mong Thọ,xa-mong-tho,30887
+10085,58,652,30889,Xã Giục Tượng,xa-giuc-tuong,30889
+10086,58,652,30892,Xã Vĩnh Hòa Hiệp,xa-vinh-hoa-hiep,30892
+10087,58,652,30893,Xã Vĩnh Hoà Phú,xa-vinh-hoa-phu,30893
+10088,58,652,30895,Xã Minh Hòa,xa-minh-hoa,30895
+10089,58,652,30898,Xã Bình An,xa-binh-an,30898
+10090,58,652,30901,Xã Thạnh Lộc,xa-thanh-loc,30901
+10091,58,653,30904,Thị Trấn Giồng Riềng,thi-tran-giong-rieng,30904
+10092,58,653,30907,Xã Thạnh Hưng,xa-thanh-hung,30907
+10093,58,653,30910,Xã Thạnh Phước,xa-thanh-phuoc,30910
+10094,58,653,30913,Xã Thạnh Lộc,xa-thanh-loc,30913
+10095,58,653,30916,Xã Thạnh Hòa,xa-thanh-hoa,30916
+10096,58,653,30917,Xã Thạnh Bình,xa-thanh-binh,30917
+10097,58,653,30919,Xã Bàn Thạch,xa-ban-thach,30919
+10098,58,653,30922,Xã Bàn Tân Định,xa-ban-tan-dinh,30922
+10099,58,653,30925,Xã Ngọc Thành,xa-ngoc-thanh,30925
+10100,58,653,30928,Xã Ngọc Chúc,xa-ngoc-chuc,30928
+10101,58,653,30931,Xã Ngọc Thuận,xa-ngoc-thuan,30931
+10102,58,653,30934,Xã Hòa Hưng,xa-hoa-hung,30934
+10103,58,653,30937,Xã Hoà Lợi,xa-hoa-loi,30937
+10104,58,653,30940,Xã Hoà An,xa-hoa-an,30940
+10105,58,653,30943,Xã Long Thạnh,xa-long-thanh,30943
+10106,58,653,30946,Xã Vĩnh Thạnh,xa-vinh-thanh,30946
+10107,58,653,30947,Xã Vĩnh Phú,xa-vinh-phu,30947
+10108,58,653,30949,Xã  Hòa Thuận,xa-hoa-thuan,30949
+10109,58,653,30950,Xã Ngọc Hoà,xa-ngoc-hoa,30950
+10110,58,654,30952,Thị trấn Gò Quao,thi-tran-go-quao,30952
+10111,58,654,30955,Xã Vĩnh Hòa Hưng Bắc,xa-vinh-hoa-hung-bac,30955
+10112,58,654,30958,Xã Định Hòa,xa-dinh-hoa,30958
+10113,58,654,30961,Xã Thới Quản,xa-thoi-quan,30961
+10114,58,654,30964,Xã Định An,xa-dinh-an,30964
+10115,58,654,30967,Xã Thủy Liễu,xa-thuy-lieu,30967
+10116,58,654,30970,Xã Vĩnh Hòa Hưng Nam,xa-vinh-hoa-hung-nam,30970
+10117,58,654,30973,Xã Vĩnh Phước A,xa-vinh-phuoc-a,30973
+10118,58,654,30976,Xã Vĩnh Phước B,xa-vinh-phuoc-b,30976
+10119,58,654,30979,Xã Vĩnh Tuy,xa-vinh-tuy,30979
+10120,58,654,30982,Xã Vĩnh Thắng,xa-vinh-thang,30982
+10121,58,655,30985,Thị trấn Thứ Ba,thi-tran-thu-ba,30985
+10122,58,655,30988,Xã Tây Yên,xa-tay-yen,30988
+10123,58,655,30991,Xã Tây Yên A,xa-tay-yen-a,30991
+10124,58,655,30994,Xã Nam Yên,xa-nam-yen,30994
+10125,58,655,30997,Xã Hưng Yên,xa-hung-yen,30997
+10126,58,655,31000,Xã Nam Thái,xa-nam-thai,31000
+10127,58,655,31003,Xã Nam Thái A,xa-nam-thai-a,31003
+10128,58,655,31006,Xã Đông Thái,xa-dong-thai,31006
+10129,58,655,31009,Xã Đông Yên,xa-dong-yen,31009
+10130,58,656,31018,Thị trấn Thứ Mười Một,thi-tran-thu-muoi-mot,31018
+10131,58,656,31021,Xã Thuận Hoà,xa-thuan-hoa,31021
+10132,58,656,31024,Xã Đông Hòa,xa-dong-hoa,31024
+10133,58,656,31030,Xã Đông Thạnh,xa-dong-thanh,31030
+10134,58,656,31031,Xã Tân Thạnh,xa-tan-thanh,31031
+10135,58,656,31033,Xã Đông Hưng,xa-dong-hung,31033
+10136,58,656,31036,Xã Đông Hưng A,xa-dong-hung-a,31036
+10137,58,656,31039,Xã Đông Hưng B,xa-dong-hung-b,31039
+10138,58,656,31042,Xã Vân Khánh,xa-van-khanh,31042
+10139,58,656,31045,Xã Vân Khánh Đông,xa-van-khanh-dong,31045
+10140,58,656,31048,Xã Vân Khánh Tây,xa-van-khanh-tay,31048
+10141,58,657,31051,Thị trấn Vĩnh Thuận,thi-tran-vinh-thuan,31051
+10142,58,657,31060,Xã Vĩnh Bình Bắc,xa-vinh-binh-bac,31060
+10143,58,657,31063,Xã Vĩnh Bình Nam,xa-vinh-binh-nam,31063
+10144,58,657,31064,Xã Bình Minh,xa-binh-minh,31064
+10145,58,657,31069,Xã Vĩnh Thuận,xa-vinh-thuan,31069
+10146,58,657,31072,Xã Tân Thuận,xa-tan-thuan,31072
+10147,58,657,31074,Xã Phong Đông,xa-phong-dong,31074
+10148,58,657,31075,Xã Vĩnh Phong,xa-vinh-phong,31075
+10149,58,658,31078,Phường Dương Đông,phuong-duong-dong,31078
+10150,58,658,31081,Phường An Thới,phuong-an-thoi,31081
+10151,58,658,31084,Xã Cửa Cạn,xa-cua-can,31084
+10152,58,658,31087,Xã Gành Dầu,xa-ganh-dau,31087
+10153,58,658,31090,Xã Cửa Dương,xa-cua-duong,31090
+10154,58,658,31093,Xã Hàm Ninh,xa-ham-ninh,31093
+10155,58,658,31096,Xã Dương Tơ,xa-duong-to,31096
+10156,58,658,31102,Xã Bãi Thơm,xa-bai-thom,31102
+10157,58,658,31105,Xã Thổ Châu,xa-tho-chau,31105
+10158,58,659,31108,Xã Hòn Tre,xa-hon-tre,31108
+10159,58,659,31111,Xã Lại Sơn,xa-lai-son,31111
+10160,58,659,31114,Xã An Sơn,xa-an-son,31114
+10161,58,659,31115,Xã Nam Du,xa-nam-du,31115
+10162,58,660,31012,Xã Thạnh Yên,xa-thanh-yen,31012
+10163,58,660,31015,Xã Thạnh Yên A,xa-thanh-yen-a,31015
+10164,58,660,31027,Xã An Minh Bắc,xa-an-minh-bac,31027
+10165,58,660,31054,Xã Vĩnh Hòa,xa-vinh-hoa,31054
+10166,58,660,31057,Xã Hoà Chánh,xa-hoa-chanh,31057
+10167,58,660,31066,Xã Minh Thuận,xa-minh-thuan,31066
+10168,58,661,30791,Xã Vĩnh Phú,xa-vinh-phu,30791
+10169,58,661,30793,Xã Vĩnh Điều,xa-vinh-dieu,30793
+10170,58,661,30796,Xã Tân Khánh Hòa,xa-tan-khanh-hoa,30796
+10171,58,661,30797,Xã Phú Lợi,xa-phu-loi,30797
+10172,58,661,30799,Xã Phú Mỹ,xa-phu-my,30799
+10173,59,662,31117,Phường Cái Khế,phuong-cai-khe,31117
+10174,59,662,31120,Phường An Hòa,phuong-an-hoa,31120
+10175,59,662,31123,Phường Thới Bình,phuong-thoi-binh,31123
+10176,59,662,31126,Phường An Nghiệp,phuong-an-nghiep,31126
+10177,59,662,31129,Phường An Cư,phuong-an-cu,31129
+10178,59,662,31135,Phường Tân An,phuong-tan-an,31135
+10179,59,662,31141,Phường An Phú,phuong-an-phu,31141
+10180,59,662,31144,Phường Xuân Khánh,phuong-xuan-khanh,31144
+10181,59,662,31147,Phường Hưng Lợi,phuong-hung-loi,31147
+10182,59,662,31149,Phường An Khánh,phuong-an-khanh,31149
+10183,59,662,31150,Phường An Bình,phuong-an-binh,31150
+10184,59,663,31153,Phường Châu Văn Liêm,phuong-chau-van-liem,31153
+10185,59,663,31154,Phường Thới Hòa,phuong-thoi-hoa,31154
+10186,59,663,31156,Phường Thới Long,phuong-thoi-long,31156
+10187,59,663,31157,Phường Long Hưng,phuong-long-hung,31157
+10188,59,663,31159,Phường Thới An,phuong-thoi-an,31159
+10189,59,663,31162,Phường Phước Thới,phuong-phuoc-thoi,31162
+10190,59,663,31165,Phường Trường Lạc,phuong-truong-lac,31165
+10191,59,664,31168,Phường Bình Thủy,phuong-binh-thuy,31168
+10192,59,664,31169,Phường Trà An,phuong-tra-an,31169
+10193,59,664,31171,Phường Trà Nóc,phuong-tra-noc,31171
+10194,59,664,31174,Phường Thới An Đông,phuong-thoi-an-dong,31174
+10195,59,664,31177,Phường An Thới,phuong-an-thoi,31177
+10196,59,664,31178,Phường Bùi Hữu Nghĩa,phuong-bui-huu-nghia,31178
+10197,59,664,31180,Phường Long Hòa,phuong-long-hoa,31180
+10198,59,664,31183,Phường Long Tuyền,phuong-long-tuyen,31183
+10199,59,665,31186,Phường Lê Bình,phuong-le-binh,31186
+10200,59,665,31189,Phường Hưng Phú,phuong-hung-phu,31189
+10201,59,665,31192,Phường Hưng Thạnh,phuong-hung-thanh,31192
+10202,59,665,31195,Phường Ba Láng,phuong-ba-lang,31195
+10203,59,665,31198,Phường Thường Thạnh,phuong-thuong-thanh,31198
+10204,59,665,31201,Phường Phú Thứ,phuong-phu-thu,31201
+10205,59,665,31204,Phường Tân Phú,phuong-tan-phu,31204
+10206,59,666,31207,Phường Thốt Nốt,phuong-thot-not,31207
+10207,59,666,31210,Phường Thới Thuận,phuong-thoi-thuan,31210
+10208,59,666,31212,Phường Thuận An,phuong-thuan-an,31212
+10209,59,666,31213,Phường Tân Lộc,phuong-tan-loc,31213
+10210,59,666,31216,Phường Trung Nhứt,phuong-trung-nhut,31216
+10211,59,666,31217,Phường Thạnh Hoà,phuong-thanh-hoa,31217
+10212,59,666,31219,Phường Trung Kiên,phuong-trung-kien,31219
+10213,59,666,31227,Phường Tân Hưng,phuong-tan-hung,31227
+10214,59,666,31228,Phường Thuận Hưng,phuong-thuan-hung,31228
+10215,59,667,31211,Xã Vĩnh Bình,xa-vinh-binh,31211
+10216,59,667,31231,Thị trấn Thanh An,thi-tran-thanh-an,31231
+10217,59,667,31232,Thị trấn Vĩnh Thạnh,thi-tran-vinh-thanh,31232
+10218,59,667,31234,Xã Thạnh Mỹ,xa-thanh-my,31234
+10219,59,667,31237,Xã Vĩnh Trinh,xa-vinh-trinh,31237
+10220,59,667,31240,Xã Thạnh An,xa-thanh-an,31240
+10221,59,667,31241,Xã Thạnh Tiến,xa-thanh-tien,31241
+10222,59,667,31243,Xã Thạnh Thắng,xa-thanh-thang,31243
+10223,59,667,31244,Xã Thạnh Lợi,xa-thanh-loi,31244
+10224,59,667,31246,Xã Thạnh Qưới,xa-thanh-quoi,31246
+10225,59,667,31252,Xã Thạnh Lộc,xa-thanh-loc,31252
+10226,59,668,31222,Xã Trung An,xa-trung-an,31222
+10227,59,668,31225,Xã Trung Thạnh,xa-trung-thanh,31225
+10228,59,668,31249,Xã Thạnh Phú,xa-thanh-phu,31249
+10229,59,668,31255,Xã Trung Hưng,xa-trung-hung,31255
+10230,59,668,31261,Thị trấn Cờ Đỏ,thi-tran-co-do,31261
+10231,59,668,31264,Xã Thới Hưng,xa-thoi-hung,31264
+10232,59,668,31273,Xã Đông Hiệp,xa-dong-hiep,31273
+10233,59,668,31274,Xã Đông Thắng,xa-dong-thang,31274
+10234,59,668,31276,Xã Thới Đông,xa-thoi-dong,31276
+10235,59,668,31277,Xã Thới Xuân,xa-thoi-xuan,31277
+10236,59,669,31299,Thị trấn Phong Điền,thi-tran-phong-dien,31299
+10237,59,669,31300,Xã Nhơn Ái,xa-nhon-ai,31300
+10238,59,669,31303,Xã Giai Xuân,xa-giai-xuan,31303
+10239,59,669,31306,Xã Tân Thới,xa-tan-thoi,31306
+10240,59,669,31309,Xã Trường Long,xa-truong-long,31309
+10241,59,669,31312,Xã Mỹ Khánh,xa-my-khanh,31312
+10242,59,669,31315,Xã Nhơn Nghĩa,xa-nhon-nghia,31315
+10243,59,670,31258,Thị trấn Thới Lai,thi-tran-thoi-lai,31258
+10244,59,670,31267,Xã Thới Thạnh,xa-thoi-thanh,31267
+10245,59,670,31268,Xã Tân Thạnh,xa-tan-thanh,31268
+10246,59,670,31270,Xã Xuân Thắng,xa-xuan-thang,31270
+10247,59,670,31279,Xã Đông Bình,xa-dong-binh,31279
+10248,59,670,31282,Xã Đông Thuận,xa-dong-thuan,31282
+10249,59,670,31285,Xã Thới Tân,xa-thoi-tan,31285
+10250,59,670,31286,Xã Trường Thắng,xa-truong-thang,31286
+10251,59,670,31288,Xã Định Môn,xa-dinh-mon,31288
+10252,59,670,31291,Xã Trường Thành,xa-truong-thanh,31291
+10253,59,670,31294,Xã Trường Xuân,xa-truong-xuan,31294
+10254,59,670,31297,Xã Trường Xuân A,xa-truong-xuan-a,31297
+10255,59,670,31298,Xã Trường Xuân B,xa-truong-xuan-b,31298
+10256,60,671,31318,Phường I,phuong-i,31318
+10257,60,671,31321,Phường III,phuong-iii,31321
+10258,60,671,31324,Phường IV,phuong-iv,31324
+10259,60,671,31327,Phường V,phuong-v,31327
+10260,60,671,31330,Phường VII,phuong-vii,31330
+10261,60,671,31333,Xã Vị Tân,xa-vi-tan,31333
+10262,60,671,31336,Xã Hoả Lựu,xa-hoa-luu,31336
+10263,60,671,31338,Xã Tân Tiến,xa-tan-tien,31338
+10264,60,671,31339,Xã Hoả Tiến,xa-hoa-tien,31339
+10265,60,672,31340,Phường Ngã Bảy,phuong-nga-bay,31340
+10266,60,672,31341,Phường Lái Hiếu,phuong-lai-hieu,31341
+10267,60,672,31343,Phường Hiệp Thành,phuong-hiep-thanh,31343
+10268,60,672,31344,Phường Hiệp Lợi,phuong-hiep-loi,31344
+10269,60,672,31411,Xã Đại Thành,xa-dai-thanh,31411
+10270,60,672,31414,Xã Tân Thành,xa-tan-thanh,31414
+10271,60,673,31342,Thị trấn Một Ngàn,thi-tran-mot-ngan,31342
+10272,60,673,31345,Xã Tân Hoà,xa-tan-hoa,31345
+10273,60,673,31346,Thị trấn Bảy Ngàn,thi-tran-bay-ngan,31346
+10274,60,673,31348,Xã Trường Long Tây,xa-truong-long-tay,31348
+10275,60,673,31351,Xã Trường Long A,xa-truong-long-a,31351
+10276,60,673,31357,Xã Nhơn Nghĩa A,xa-nhon-nghia-a,31357
+10277,60,673,31359,Thị trấn Rạch Gòi,thi-tran-rach-goi,31359
+10278,60,673,31360,Xã Thạnh Xuân,xa-thanh-xuan,31360
+10279,60,673,31362,Thị trấn Cái Tắc,thi-tran-cai-tac,31362
+10280,60,673,31363,Xã Tân Phú Thạnh,xa-tan-phu-thanh,31363
+10281,60,674,31366,Thị Trấn Ngã Sáu,thi-tran-nga-sau,31366
+10282,60,674,31369,Xã Đông Thạnh,xa-dong-thanh,31369
+10283,60,674,31375,Xã Đông Phú,xa-dong-phu,31375
+10284,60,674,31378,Xã Phú Hữu,xa-phu-huu,31378
+10285,60,674,31379,Xã Phú Tân,xa-phu-tan,31379
+10286,60,674,31381,Thị trấn Mái Dầm,thi-tran-mai-dam,31381
+10287,60,674,31384,Xã Đông Phước,xa-dong-phuoc,31384
+10288,60,674,31387,Xã Đông Phước A,xa-dong-phuoc-a,31387
+10289,60,675,31393,Thị trấn Kinh Cùng,thi-tran-kinh-cung,31393
+10290,60,675,31396,Thị trấn Cây Dương,thi-tran-cay-duong,31396
+10291,60,675,31399,Xã Tân Bình,xa-tan-binh,31399
+10292,60,675,31402,Xã Bình Thành,xa-binh-thanh,31402
+10293,60,675,31405,Xã Thạnh Hòa,xa-thanh-hoa,31405
+10294,60,675,31408,Xã Long Thạnh,xa-long-thanh,31408
+10295,60,675,31417,Xã Phụng Hiệp,xa-phung-hiep,31417
+10296,60,675,31420,Xã Hòa Mỹ,xa-hoa-my,31420
+10297,60,675,31423,Xã Hòa An,xa-hoa-an,31423
+10298,60,675,31426,Xã Phương Bình,xa-phuong-binh,31426
+10299,60,675,31429,Xã Hiệp Hưng,xa-hiep-hung,31429
+10300,60,675,31432,Xã Tân Phước Hưng,xa-tan-phuoc-hung,31432
+10301,60,675,31433,Thị trấn Búng Tàu,thi-tran-bung-tau,31433
+10302,60,675,31435,Xã Phương Phú,xa-phuong-phu,31435
+10303,60,675,31438,Xã Tân Long,xa-tan-long,31438
+10304,60,676,31441,Thị trấn Nàng Mau,thi-tran-nang-mau,31441
+10305,60,676,31444,Xã Vị Trung,xa-vi-trung,31444
+10306,60,676,31447,Xã Vị Thuỷ,xa-vi-thuy,31447
+10307,60,676,31450,Xã Vị Thắng,xa-vi-thang,31450
+10308,60,676,31453,Xã Vĩnh Thuận Tây,xa-vinh-thuan-tay,31453
+10309,60,676,31456,Xã Vĩnh Trung,xa-vinh-trung,31456
+10310,60,676,31459,Xã Vĩnh Tường,xa-vinh-tuong,31459
+10311,60,676,31462,Xã Vị Đông,xa-vi-dong,31462
+10312,60,676,31465,Xã Vị Thanh,xa-vi-thanh,31465
+10313,60,676,31468,Xã Vị Bình,xa-vi-binh,31468
+10314,60,677,31483,Xã Thuận Hưng,xa-thuan-hung,31483
+10315,60,677,31484,Xã Thuận Hòa,xa-thuan-hoa,31484
+10316,60,677,31486,Xã Vĩnh Thuận Đông,xa-vinh-thuan-dong,31486
+10317,60,677,31489,Thị trấn Vĩnh Viễn,thi-tran-vinh-vien,31489
+10318,60,677,31490,Xã Vĩnh Viễn A,xa-vinh-vien-a,31490
+10319,60,677,31492,Xã Lương Tâm,xa-luong-tam,31492
+10320,60,677,31493,Xã Lương Nghĩa,xa-luong-nghia,31493
+10321,60,677,31495,Xã Xà Phiên,xa-xa-phien,31495
+10322,60,678,31471,Phường Thuận An,phuong-thuan-an,31471
+10323,60,678,31472,Phường Trà Lồng,phuong-tra-long,31472
+10324,60,678,31473,Phường Bình Thạnh,phuong-binh-thanh,31473
+10325,60,678,31474,Xã Long Bình,xa-long-binh,31474
+10326,60,678,31475,Phường Vĩnh Tường,phuong-vinh-tuong,31475
+10327,60,678,31477,Xã Long Trị,xa-long-tri,31477
+10328,60,678,31478,Xã Long Trị A,xa-long-tri-a,31478
+10329,60,678,31480,Xã Long Phú,xa-long-phu,31480
+10330,60,678,31481,Xã Tân Phú,xa-tan-phu,31481
+10331,61,679,31498,Phường 5,phuong-5,31498
+10332,61,679,31501,Phường 7,phuong-7,31501
+10333,61,679,31504,Phường 8,phuong-8,31504
+10334,61,679,31507,Phường 6,phuong-6,31507
+10335,61,679,31510,Phường 2,phuong-2,31510
+10336,61,679,31513,Phường 1,phuong-1,31513
+10337,61,679,31516,Phường 4,phuong-4,31516
+10338,61,679,31519,Phường 3,phuong-3,31519
+10339,61,679,31522,Phường 9,phuong-9,31522
+10340,61,679,31525,Phường 10,phuong-10,31525
+10341,61,680,31569,Thị trấn Châu Thành,thi-tran-chau-thanh,31569
+10342,61,680,31570,Xã Hồ Đắc Kiện,xa-ho-dac-kien,31570
+10343,61,680,31573,Xã Phú Tâm,xa-phu-tam,31573
+10344,61,680,31576,Xã Thuận Hòa,xa-thuan-hoa,31576
+10345,61,680,31582,Xã Phú Tân,xa-phu-tan,31582
+10346,61,680,31585,Xã Thiện Mỹ,xa-thien-my,31585
+10347,61,680,31594,Xã An Hiệp,xa-an-hiep,31594
+10348,61,680,31600,Xã An Ninh,xa-an-ninh,31600
+10349,61,681,31528,Thị trấn Kế Sách,thi-tran-ke-sach,31528
+10350,61,681,31531,Thị trấn An Lạc Thôn,thi-tran-an-lac-thon,31531
+10351,61,681,31534,Xã Xuân Hòa,xa-xuan-hoa,31534
+10352,61,681,31537,Xã Phong Nẫm,xa-phong-nam,31537
+10353,61,681,31540,Xã An Lạc Tây,xa-an-lac-tay,31540
+10354,61,681,31543,Xã Trinh Phú,xa-trinh-phu,31543
+10355,61,681,31546,Xã Ba Trinh,xa-ba-trinh,31546
+10356,61,681,31549,Xã Thới An Hội,xa-thoi-an-hoi,31549
+10357,61,681,31552,Xã Nhơn Mỹ,xa-nhon-my,31552
+10358,61,681,31555,Xã Kế Thành,xa-ke-thanh,31555
+10359,61,681,31558,Xã Kế An,xa-ke-an,31558
+10360,61,681,31561,Xã Đại Hải,xa-dai-hai,31561
+10361,61,681,31564,Xã An Mỹ,xa-an-my,31564
+10362,61,682,31567,Thị trấn Huỳnh Hữu Nghĩa,thi-tran-huynh-huu-nghia,31567
+10363,61,682,31579,Xã Long Hưng,xa-long-hung,31579
+10364,61,682,31588,Xã Hưng Phú,xa-hung-phu,31588
+10365,61,682,31591,Xã Mỹ Hương,xa-my-huong,31591
+10366,61,682,31597,Xã Mỹ Tú,xa-my-tu,31597
+10367,61,682,31603,Xã Mỹ Phước,xa-my-phuoc,31603
+10368,61,682,31606,Xã Thuận Hưng,xa-thuan-hung,31606
+10369,61,682,31609,Xã Mỹ Thuận,xa-my-thuan,31609
+10370,61,682,31612,Xã Phú Mỹ,xa-phu-my,31612
+10371,61,683,31615,Thị trấn Cù Lao Dung,thi-tran-cu-lao-dung,31615
+10372,61,683,31618,Xã An Thạnh 1,xa-an-thanh-1,31618
+10373,61,683,31621,Xã An Thạnh Tây,xa-an-thanh-tay,31621
+10374,61,683,31624,Xã An Thạnh Đông,xa-an-thanh-dong,31624
+10375,61,683,31627,Xã Đại Ân 1,xa-dai-an-1,31627
+10376,61,683,31630,Xã An Thạnh 2,xa-an-thanh-2,31630
+10377,61,683,31633,Xã An Thạnh 3,xa-an-thanh-3,31633
+10378,61,683,31636,Xã An Thạnh Nam,xa-an-thanh-nam,31636
+10379,61,684,31639,Thị trấn Long Phú,thi-tran-long-phu,31639
+10380,61,684,31642,Xã Song Phụng,xa-song-phung,31642
+10381,61,684,31645,Thị trấn Đại Ngãi,thi-tran-dai-ngai,31645
+10382,61,684,31648,Xã Hậu Thạnh,xa-hau-thanh,31648
+10383,61,684,31651,Xã Long Đức,xa-long-duc,31651
+10384,61,684,31654,Xã Trường Khánh,xa-truong-khanh,31654
+10385,61,684,31657,Xã Phú Hữu,xa-phu-huu,31657
+10386,61,684,31660,Xã Tân Hưng,xa-tan-hung,31660
+10387,61,684,31663,Xã Châu Khánh,xa-chau-khanh,31663
+10388,61,684,31666,Xã Tân Thạnh,xa-tan-thanh,31666
+10389,61,684,31669,Xã Long Phú,xa-long-phu,31669
+10390,61,685,31684,Thị trấn Mỹ Xuyên,thi-tran-my-xuyen,31684
+10391,61,685,31690,Xã Đại Tâm,xa-dai-tam,31690
+10392,61,685,31693,Xã Tham Đôn,xa-tham-don,31693
+10393,61,685,31708,Xã Thạnh Phú,xa-thanh-phu,31708
+10394,61,685,31711,Xã Ngọc Đông,xa-ngoc-dong,31711
+10395,61,685,31714,Xã Thạnh Quới,xa-thanh-quoi,31714
+10396,61,685,31717,Xã Hòa Tú 1,xa-hoa-tu-1,31717
+10397,61,685,31720,Xã Gia Hòa 1,xa-gia-hoa-1,31720
+10398,61,685,31723,Xã Ngọc Tố,xa-ngoc-to,31723
+10399,61,685,31726,Xã Gia Hòa 2,xa-gia-hoa-2,31726
+10400,61,685,31729,Xã Hòa Tú II,xa-hoa-tu-ii,31729
+10401,61,686,31732,Phường 1,phuong-1,31732
+10402,61,686,31735,Phường 2,phuong-2,31735
+10403,61,686,31738,Xã Vĩnh Quới,xa-vinh-quoi,31738
+10404,61,686,31741,Xã Tân Long,xa-tan-long,31741
+10405,61,686,31744,Xã Long Bình,xa-long-binh,31744
+10406,61,686,31747,Phường 3,phuong-3,31747
+10407,61,686,31750,Xã Mỹ Bình,xa-my-binh,31750
+10408,61,686,31753,Xã Mỹ Quới,xa-my-quoi,31753
+10409,61,687,31756,Thị trấn Phú Lộc,thi-tran-phu-loc,31756
+10410,61,687,31757,Thị trấn Hưng Lợi,thi-tran-hung-loi,31757
+10411,61,687,31759,Xã Lâm Tân,xa-lam-tan,31759
+10412,61,687,31762,Xã Thạnh Tân,xa-thanh-tan,31762
+10413,61,687,31765,Xã Lâm Kiết,xa-lam-kiet,31765
+10414,61,687,31768,Xã Tuân Tức,xa-tuan-tuc,31768
+10415,61,687,31771,Xã Vĩnh Thành,xa-vinh-thanh,31771
+10416,61,687,31774,Xã Thạnh Trị,xa-thanh-tri,31774
+10417,61,687,31777,Xã Vĩnh Lợi,xa-vinh-loi,31777
+10418,61,687,31780,Xã Châu Hưng,xa-chau-hung,31780
+10419,61,688,31783,Phường 1,phuong-1,31783
+10420,61,688,31786,Xã Hòa Đông,xa-hoa-dong,31786
+10421,61,688,31789,Phường Khánh Hòa,phuong-khanh-hoa,31789
+10422,61,688,31792,Xã Vĩnh Hiệp,xa-vinh-hiep,31792
+10423,61,688,31795,Xã Vĩnh Hải,xa-vinh-hai,31795
+10424,61,688,31798,Xã Lạc Hòa,xa-lac-hoa,31798
+10425,61,688,31801,Phường 2,phuong-2,31801
+10426,61,688,31804,Phường Vĩnh Phước,phuong-vinh-phuoc,31804
+10427,61,688,31807,Xã Vĩnh Tân,xa-vinh-tan,31807
+10428,61,688,31810,Xã Lai Hòa,xa-lai-hoa,31810
+10429,61,689,31672,Xã Đại Ân  2,xa-dai-an-2,31672
+10430,61,689,31673,Thị trấn Trần Đề,thi-tran-tran-de,31673
+10431,61,689,31675,Xã Liêu Tú,xa-lieu-tu,31675
+10432,61,689,31678,Xã Lịch Hội Thượng,xa-lich-hoi-thuong,31678
+10433,61,689,31679,Thị trấn Lịch Hội Thượng,thi-tran-lich-hoi-thuong,31679
+10434,61,689,31681,Xã Trung Bình,xa-trung-binh,31681
+10435,61,689,31687,Xã Tài Văn,xa-tai-van,31687
+10436,61,689,31696,Xã Viên An,xa-vien-an,31696
+10437,61,689,31699,Xã Thạnh Thới An,xa-thanh-thoi-an,31699
+10438,61,689,31702,Xã Thạnh Thới Thuận,xa-thanh-thoi-thuan,31702
+10439,61,689,31705,Xã Viên Bình,xa-vien-binh,31705
+10440,62,690,31813,Phường 2,phuong-2,31813
+10441,62,690,31816,Phường 3,phuong-3,31816
+10442,62,690,31819,Phường 5,phuong-5,31819
+10443,62,690,31822,Phường 7,phuong-7,31822
+10444,62,690,31825,Phường 1,phuong-1,31825
+10445,62,690,31828,Phường 8,phuong-8,31828
+10446,62,690,31831,Phường Nhà Mát,phuong-nha-mat,31831
+10447,62,690,31834,Xã Vĩnh Trạch,xa-vinh-trach,31834
+10448,62,690,31837,Xã Vĩnh Trạch Đông,xa-vinh-trach-dong,31837
+10449,62,690,31840,Xã Hiệp Thành,xa-hiep-thanh,31840
+10450,62,691,31843,Thị trấn Ngan Dừa,thi-tran-ngan-dua,31843
+10451,62,691,31846,Xã Ninh Quới,xa-ninh-quoi,31846
+10452,62,691,31849,Xã Ninh Quới A,xa-ninh-quoi-a,31849
+10453,62,691,31852,Xã Ninh Hòa,xa-ninh-hoa,31852
+10454,62,691,31855,Xã Lộc Ninh,xa-loc-ninh,31855
+10455,62,691,31858,Xã Vĩnh Lộc,xa-vinh-loc,31858
+10456,62,691,31861,Xã Vĩnh Lộc A,xa-vinh-loc-a,31861
+10457,62,691,31863,Xã Ninh Thạnh Lợi A,xa-ninh-thanh-loi-a,31863
+10458,62,691,31864,Xã Ninh Thạnh Lợi,xa-ninh-thanh-loi,31864
+10459,62,692,31867,Thị trấn Phước Long,thi-tran-phuoc-long,31867
+10460,62,692,31870,Xã Vĩnh Phú Đông,xa-vinh-phu-dong,31870
+10461,62,692,31873,Xã Vĩnh Phú Tây,xa-vinh-phu-tay,31873
+10462,62,692,31876,Xã Phước Long,xa-phuoc-long,31876
+10463,62,692,31879,Xã Hưng Phú,xa-hung-phu,31879
+10464,62,692,31882,Xã Vĩnh Thanh,xa-vinh-thanh,31882
+10465,62,692,31885,Xã Phong Thạnh Tây A,xa-phong-thanh-tay-a,31885
+10466,62,692,31888,Xã Phong Thạnh Tây B,xa-phong-thanh-tay-b,31888
+10467,62,693,31894,Xã Vĩnh Hưng,xa-vinh-hung,31894
+10468,62,693,31897,Xã Vĩnh Hưng A,xa-vinh-hung-a,31897
+10469,62,693,31900,Thị trấn Châu Hưng,thi-tran-chau-hung,31900
+10470,62,693,31903,Xã Châu Hưng A,xa-chau-hung-a,31903
+10471,62,693,31906,Xã Hưng Thành,xa-hung-thanh,31906
+10472,62,693,31909,Xã Hưng Hội,xa-hung-hoi,31909
+10473,62,693,31912,Xã Châu Thới,xa-chau-thoi,31912
+10474,62,693,31921,Xã Long Thạnh,xa-long-thanh,31921
+10475,62,694,31942,Phường 1,phuong-1,31942
+10476,62,694,31945,Phường Hộ Phòng,phuong-ho-phong,31945
+10477,62,694,31948,Xã Phong Thạnh Đông,xa-phong-thanh-dong,31948
+10478,62,694,31951,Phường Láng Tròn,phuong-lang-tron,31951
+10479,62,694,31954,Xã Phong Tân,xa-phong-tan,31954
+10480,62,694,31957,Xã Tân Phong,xa-tan-phong,31957
+10481,62,694,31960,Xã Phong Thạnh,xa-phong-thanh,31960
+10482,62,694,31963,Xã Phong Thạnh A,xa-phong-thanh-a,31963
+10483,62,694,31966,Xã Phong Thạnh Tây,xa-phong-thanh-tay,31966
+10484,62,694,31969,Xã Tân Thạnh,xa-tan-thanh,31969
+10485,62,695,31972,Thị trấn Gành Hào,thi-tran-ganh-hao,31972
+10486,62,695,31975,Xã Long Điền Đông,xa-long-dien-dong,31975
+10487,62,695,31978,Xã Long Điền Đông A,xa-long-dien-dong-a,31978
+10488,62,695,31981,Xã Long Điền,xa-long-dien,31981
+10489,62,695,31984,Xã Long Điền Tây,xa-long-dien-tay,31984
+10490,62,695,31985,Xã Điền Hải,xa-dien-hai,31985
+10491,62,695,31987,Xã An Trạch,xa-an-trach,31987
+10492,62,695,31988,Xã An Trạch A,xa-an-trach-a,31988
+10493,62,695,31990,Xã An Phúc,xa-an-phuc,31990
+10494,62,695,31993,Xã Định Thành,xa-dinh-thanh,31993
+10495,62,695,31996,Xã Định Thành A,xa-dinh-thanh-a,31996
+10496,62,696,31891,Thị trấn Hòa Bình,thi-tran-hoa-binh,31891
+10497,62,696,31915,Xã Minh Diệu,xa-minh-dieu,31915
+10498,62,696,31918,Xã Vĩnh Bình,xa-vinh-binh,31918
+10499,62,696,31924,Xã Vĩnh Mỹ B,xa-vinh-my-b,31924
+10500,62,696,31927,Xã Vĩnh Hậu,xa-vinh-hau,31927
+10501,62,696,31930,Xã Vĩnh Hậu A,xa-vinh-hau-a,31930
+10502,62,696,31933,Xã Vĩnh Mỹ A,xa-vinh-my-a,31933
+10503,62,696,31936,Xã Vĩnh Thịnh,xa-vinh-thinh,31936
+10504,63,697,31999,Phường 9,phuong-9,31999
+10505,63,697,32002,Phường 4,phuong-4,32002
+10506,63,697,32005,Phường 1,phuong-1,32005
+10507,63,697,32008,Phường 5,phuong-5,32008
+10508,63,697,32011,Phường 2,phuong-2,32011
+10509,63,697,32014,Phường 8,phuong-8,32014
+10510,63,697,32017,Phường 6,phuong-6,32017
+10511,63,697,32020,Phường 7,phuong-7,32020
+10512,63,697,32022,Phường Tân Xuyên,phuong-tan-xuyen,32022
+10513,63,697,32023,Xã An Xuyên,xa-an-xuyen,32023
+10514,63,697,32025,Phường Tân Thành,phuong-tan-thanh,32025
+10515,63,697,32026,Xã Tân Thành,xa-tan-thanh,32026
+10516,63,697,32029,Xã Tắc Vân,xa-tac-van,32029
+10517,63,697,32032,Xã Lý Văn Lâm,xa-ly-van-lam,32032
+10518,63,697,32035,Xã Định Bình,xa-dinh-binh,32035
+10519,63,697,32038,Xã Hòa Thành,xa-hoa-thanh,32038
+10520,63,697,32041,Xã Hòa Tân,xa-hoa-tan,32041
+10521,63,698,32044,Thị trấn U Minh,thi-tran-u-minh,32044
+10522,63,698,32047,Xã Khánh Hòa,xa-khanh-hoa,32047
+10523,63,698,32048,Xã Khánh Thuận,xa-khanh-thuan,32048
+10524,63,698,32050,Xã Khánh Tiến,xa-khanh-tien,32050
+10525,63,698,32053,Xã Nguyễn Phích,xa-nguyen-phich,32053
+10526,63,698,32056,Xã Khánh Lâm,xa-khanh-lam,32056
+10527,63,698,32059,Xã Khánh An,xa-khanh-an,32059
+10528,63,698,32062,Xã Khánh Hội,xa-khanh-hoi,32062
+10529,63,699,32065,Thị trấn Thới Bình,thi-tran-thoi-binh,32065
+10530,63,699,32068,Xã Biển Bạch,xa-bien-bach,32068
+10531,63,699,32069,Xã Tân Bằng,xa-tan-bang,32069
+10532,63,699,32071,Xã Trí Phải,xa-tri-phai,32071
+10533,63,699,32072,Xã Trí Lực,xa-tri-luc,32072
+10534,63,699,32074,Xã Biển Bạch Đông,xa-bien-bach-dong,32074
+10535,63,699,32077,Xã Thới Bình,xa-thoi-binh,32077
+10536,63,699,32080,Xã Tân Phú,xa-tan-phu,32080
+10537,63,699,32083,Xã Tân Lộc Bắc,xa-tan-loc-bac,32083
+10538,63,699,32086,Xã Tân Lộc,xa-tan-loc,32086
+10539,63,699,32089,Xã Tân Lộc Đông,xa-tan-loc-dong,32089
+10540,63,699,32092,Xã Hồ Thị Kỷ,xa-ho-thi-ky,32092
+10541,63,700,32095,Thị trấn Trần Văn Thời,thi-tran-tran-van-thoi,32095
+10542,63,700,32098,Thị trấn Sông Đốc,thi-tran-song-doc,32098
+10543,63,700,32101,Xã Khánh Bình Tây Bắc,xa-khanh-binh-tay-bac,32101
+10544,63,700,32104,Xã Khánh Bình Tây,xa-khanh-binh-tay,32104
+10545,63,700,32107,Xã Trần Hợi,xa-tran-hoi,32107
+10546,63,700,32108,Xã Khánh Lộc,xa-khanh-loc,32108
+10547,63,700,32110,Xã Khánh Bình,xa-khanh-binh,32110
+10548,63,700,32113,Xã Khánh Hưng,xa-khanh-hung,32113
+10549,63,700,32116,Xã Khánh Bình Đông,xa-khanh-binh-dong,32116
+10550,63,700,32119,Xã Khánh Hải,xa-khanh-hai,32119
+10551,63,700,32122,Xã Lợi An,xa-loi-an,32122
+10552,63,700,32124,Xã Phong Điền,xa-phong-dien,32124
+10553,63,700,32125,Xã Phong Lạc,xa-phong-lac,32125
+10554,63,701,32128,Thị trấn Cái Nước,thi-tran-cai-nuoc,32128
+10555,63,701,32130,Xã Thạnh Phú,xa-thanh-phu,32130
+10556,63,701,32131,Xã Lương Thế Trân,xa-luong-the-tran,32131
+10557,63,701,32134,Xã Phú Hưng,xa-phu-hung,32134
+10558,63,701,32137,Xã Tân Hưng,xa-tan-hung,32137
+10559,63,701,32140,Xã Hưng Mỹ,xa-hung-my,32140
+10560,63,701,32141,Xã Hoà Mỹ,xa-hoa-my,32141
+10561,63,701,32142,Xã Đông Hưng,xa-dong-hung,32142
+10562,63,701,32143,Xã Đông Thới,xa-dong-thoi,32143
+10563,63,701,32146,Xã Tân Hưng Đông,xa-tan-hung-dong,32146
+10564,63,701,32149,Xã Trần Thới,xa-tran-thoi,32149
+10565,63,702,32152,Thị trấn Đầm Dơi,thi-tran-dam-doi,32152
+10566,63,702,32155,Xã Tạ An Khương,xa-ta-an-khuong,32155
+10567,63,702,32158,Xã Tạ An Khương  Đông,xa-ta-an-khuong-dong,32158
+10568,63,702,32161,Xã Trần Phán,xa-tran-phan,32161
+10569,63,702,32162,Xã Tân Trung,xa-tan-trung,32162
+10570,63,702,32164,Xã Tân Đức,xa-tan-duc,32164
+10571,63,702,32167,Xã Tân Thuận,xa-tan-thuan,32167
+10572,63,702,32170,Xã Tạ An Khương  Nam,xa-ta-an-khuong-nam,32170
+10573,63,702,32173,Xã Tân Duyệt,xa-tan-duyet,32173
+10574,63,702,32174,Xã Tân Dân,xa-tan-dan,32174
+10575,63,702,32176,Xã Tân Tiến,xa-tan-tien,32176
+10576,63,702,32179,Xã Quách Phẩm Bắc,xa-quach-pham-bac,32179
+10577,63,702,32182,Xã Quách Phẩm,xa-quach-pham,32182
+10578,63,702,32185,Xã Thanh Tùng,xa-thanh-tung,32185
+10579,63,702,32186,Xã Ngọc Chánh,xa-ngoc-chanh,32186
+10580,63,702,32188,Xã Nguyễn Huân,xa-nguyen-huan,32188
+10581,63,703,32191,Thị Trấn Năm Căn,thi-tran-nam-can,32191
+10582,63,703,32194,Xã Hàm Rồng,xa-ham-rong,32194
+10583,63,703,32197,Xã Hiệp Tùng,xa-hiep-tung,32197
+10584,63,703,32200,Xã Đất Mới,xa-dat-moi,32200
+10585,63,703,32201,Xã Lâm Hải,xa-lam-hai,32201
+10586,63,703,32203,Xã Hàng Vịnh,xa-hang-vinh,32203
+10587,63,703,32206,Xã Tam Giang,xa-tam-giang,32206
+10588,63,703,32209,Xã Tam Giang Đông,xa-tam-giang-dong,32209
+10589,63,704,32212,Thị trấn Cái Đôi Vàm,thi-tran-cai-doi-vam,32212
+10590,63,704,32214,Xã Phú Thuận,xa-phu-thuan,32214
+10591,63,704,32215,Xã Phú Mỹ,xa-phu-my,32215
+10592,63,704,32218,Xã Phú Tân,xa-phu-tan,32218
+10593,63,704,32221,Xã Tân Hải,xa-tan-hai,32221
+10594,63,704,32224,Xã Việt Thắng,xa-viet-thang,32224
+10595,63,704,32227,Xã Tân Hưng Tây,xa-tan-hung-tay,32227
+10596,63,704,32228,Xã Rạch Chèo,xa-rach-cheo,32228
+10597,63,704,32230,Xã Nguyễn Việt Khái,xa-nguyen-viet-khai,32230
+10598,63,705,32233,Xã Tam Giang Tây,xa-tam-giang-tay,32233
+10599,63,705,32236,Xã Tân Ân Tây,xa-tan-an-tay,32236
+10600,63,705,32239,Xã Viên An Đông,xa-vien-an-dong,32239
+10601,63,705,32242,Xã Viên An,xa-vien-an,32242
+10602,63,705,32244,Thị trấn Rạch Gốc,thi-tran-rach-goc,32244
+10603,63,705,32245,Xã Tân Ân,xa-tan-an,32245
+10604,63,705,32248,Xã Đất Mũi,xa-dat-mui,32248

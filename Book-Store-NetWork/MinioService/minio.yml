@@ -1,16 +1,16 @@
-version: '3.8'
-
 services:
   minio:
-    image: docker.io/bitnami/minio:2025
+    image: minio/minio
     container_name: minio
     environment:
-      MINIO_ROOT_USER: admin
-      MINIO_ROOT_PASSWORD: admin@2024
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
     volumes:
-      - ./docker:/bitnami/minio/data
-      - ./config:/opt/bitnami/minio/config
+      - datastore:/data
     ports:
       - '9000:9000'
       - '9001:9001'
-    command: minio server /bitnami/minio/data --console-address ":9001"
+    command: server /data --console-address ":9001"
+
+volumes:
+  datastore:

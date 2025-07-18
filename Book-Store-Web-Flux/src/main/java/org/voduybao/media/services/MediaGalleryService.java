@@ -5,6 +5,7 @@ import org.voduybao.tools.response.http.Result;
 import reactor.core.publisher.Mono;
 
 public interface MediaGalleryService {
-    Result upload(Mono<FilePart> file, String type);
+    Result upload(FilePart file, String type);
 
+    String createBucket(String bucketName);
 }

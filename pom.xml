@@ -13,6 +13,8 @@
         <module>Book-Store-Web-Flux</module>
         <module>Book-Store-Tools</module>
         <module>Book-Store-Web-MVC</module>
+        <module>Book-Store-Spring-Batch</module>
+        <module>Book-Store-Data-JPA</module>
     </modules>
 
 </project>
